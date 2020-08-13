@@ -1,0 +1,76 @@
+textarea {
+            resize: none;
+        }
+
+        .inpt {
+            /* border-color: white; */
+        }
+
+        .img {
+            width: 180px;
+            max-height: 200px;
+            border: 1px solid grey;
+        }
+
+        label {
+            font-weight: 640;
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            /* Force table to not be like tables anymore */
+            #no-more-tables table,
+            #no-more-tables thead,
+            #no-more-tables tbody,
+            #no-more-tables th,
+            #no-more-tables td,
+            #no-more-tables tr {
+                display: block;
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            #no-more-tables thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            #no-more-tables tr {
+                border: 1px solid #ccc;
+            }
+
+            #no-more-tables td {
+                /* Behave like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                white-space: normal;
+                text-align: left;
+            }
+
+            #no-more-tables td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            /*
+Label the data
+*/
+            #no-more-tables td:before {
+                content: attr(data-title);
+
+            }
+        }
+
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: rgba(0, 0, 0, .05);
+        }
