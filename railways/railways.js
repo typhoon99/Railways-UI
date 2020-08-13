@@ -12,7 +12,7 @@ $("#category2").on("click", function () {
     console.log($(this).id)
 });
 
-$("#subCategory1-project1").on('click', function(){
+$("#subCategory-next").on('click', function(){
     $("#register-university-tab").tab("show");
 });
 
