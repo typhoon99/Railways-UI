@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body{font-family: 'Open Sans', sans-serif; color: #323234}
+.mainTpDiv{width: 100%; float: left; }
+header{background: #fff; padding: 10px 0 0; border-top: 0px solid #128582}
+._hdrRgt{text-align: right;}
+._hdrC{text-align: center;}
+.bannerDiv{width: 100%; float: left;border-top: 2px solid #128582}
+.bannerDiv img{width: 100%}
+.headerIn{width: 100%; float: left; }
+.hdrMenuDiv{width: 100%; float: left; border-bottom: 1px solid #bac5cd; padding-bottom: 25px; background: #128582}
+.hdrMenuDivIn{width: 100%; float: left; text-align: center; padding-top: 25px}
+.hdrMenuDivIn ul{padding: 0; margin: 0; list-style-type: none;}
+.hdrMenuDivIn ul li{display: inline-block; padding: 0 15px; position: relative;}
+.hdrMenuDivIn ul li a{color: #fff; font-size: 17px; text-decoration: none; }
+.hdrMenuDivIn ul li ul{display: none; width: 180px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.5); position: absolute; top: 100%; left: 0; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius: 6px; z-index: 9}
+.hdrMenuDivIn ul li:hover ul{display: inline-block;}
+.hdrMenuDivIn ul li ul li{width: 100%;float: left; text-align: left; padding: 8px 10px}
+.hdrMenuDivIn ul li ul li a{color: #212121; font-size: 17px; text-decoration: none;}
+.mainContentDiv{width: 100%; float: left; padding: 45px 0; background: url(../images/bannerImg.jpg) no-repeat center top; background-size: cover;}
+.mainContenDivTop{width: 100%; float: left;}
+._stateScoreDivIn{width: 100%; float: left;background: rgba(255,255,255,0.8); padding: 15px 45px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius: 6px}
+._stateScoreDivInTab{width: 100%; float: left;}
+.mapTxt{width: auto; float: left; color: #333; font-size: 17px}
+.tabTxt{width: auto; float: left; color: #333; font-size: 17px}
+.maptabTab{width: 40px; height: 21px; float: left; background: #c3c3c3; -webkit-border-radius:20px; -moz-border-radius:20px; border-radius: 20px; text-indent: -999999px; margin: 0 8px; padding: 3px 0}
+.maptabTab ul{padding: 0; margin: 0; list-style-type: none;}
+.maptabTab ul li{display: inline-block; width: 15px; height: 15px; float: left; background: #c3c3c3; -webkit-border-radius:100%; -moz-border-radius:100%; border-radius: 100%; cursor: pointer;}
+.maptabTab ul li:last-child{float: right;}
+._stScore{width: 100%; float: left; font-size: 17px; padding-top: 20px}
+.maptabTab ul li.activeMp{background: #007bff;}
+._mapTableCntShw{width: 100%; float: left; padding: 25px 0}
+._mapshw{width: 100%; float: left;}
+.statesUtsDivIn{width: 100%; float: left; background: rgba(255,255,255,0.8); padding: 15px 45px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius: 6px}
+._stateUtsDivCnt{width: 100%; float: left; margin-top: 45px}
+._statesDivShow{width: 100%; float: left;}
+._statesDivShow ul{padding: 0; margin: 0; list-style-type: none;}
+._statesDivShow ul li{width: 100%; float: left; padding: 13px 0; border-bottom: 1px solid #e0e0e0}
+._statesDivShow ul li ._area{width: 25%; float: left;}
+._statesDivShow ul li ._sdgS{width: 40%; float: left;}
+._statesDivShow ul li ._rank2019{width: 25%; float: left;}
+._statesDivShow ul li ._score2019{width: 25%; float: left;}
+._statesDivShow ul li ._score2018{width: 25%; float: left;}
+.btmCntDiv{padding-top: 25px; width: 100%; float: left;}
+.mainCntIndiactorLstDiv{width: 100%; float: left; background: #f7f7f6; padding: 45px 0}
+.mainCntIndiactorLstDivIn{width: 100%; float: left;}
+.indiHdng{color: #212529; font-size: 18px; font-weight: 600;}
+.indiHdng span{font-weight: 400}
+table{width: 100%; float: left; border:1px solid #ccc; padding: 15px}
+table th{background:#ccc; padding: 8px }
+table td{background:#fff; padding: 8px }
+footer{width: 100%; float: left; padding: 45px; background: #fff}
+.footerIn{width: 100%; float: left;}
+._statesDivShow ul li:first-child{font-weight: bold; text-transform: uppercase;}
+.sc4::-webkit-scrollbar { width: 5px; height: 5px; position: relative; top: 15px}
+.sc4::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba(45, 45, 45, 1);}
+.sc4::-webkit-scrollbar-thumb { background-color: #128582; background-image:-webkit-linear-gradient(45deg,rgba(8,133,130,1) 30%,transparent 50%,rgba(8,133,130,1) 30%,transparent 50%,transparent 60%,rgba(8,133,130,1) 30% ,transparent 60%); border-radius: 6px; top: 25px; }
+.sc4::-moz-scrollbar-thumb { background-color: #3390ff; background-image:-webkit-linear-gradient(45deg,rgba(8,133,130,1) 30%,transparent 50%,rgba(8,133,130,1) 30%,transparent 50%,transparent 60%,rgba(8,133,130,1) 30% ,transparent 60%); border-radius: 6px;}
+.sc4::scrollbar-thumb { background-color: #ff9933; background-image:-webkit-linear-gradient(45deg,rgba(8,133,130,1) 30%,transparent 50%,rgba(8,133,130,1) 30%,transparent 50%,transparent 60%,rgba(8,133,130,1) 30% ,transparent 60%); border-radius: 6px;}
+.h600 {height: 600px;}
+.mainCntIndiactorLstDivIn table{width: 3500px}
+._stateUtsDivCnt .demoScroll{height: 477px; overflow-y: scroll; overflow-x: hidden;}
+.mainCntIndiactorLstDivIn .demoScroll{height: 477px; overflow-y: scroll; overflow-x: scroll;}
+
+/* New CSS - Pushkar  - 29/07/2020 */
+
+.state {
+stroke: black;
+fill: white;
+}
+
+.selected {
+fill: #fb6340;
+}
+
+.nav-pills > .nav-item> .active, .nav-pills > .active :hover {
+    background-color: #172b4d;
+}
+
+.bg-info{
+    background-color: #BCF0EF !important;
+}
+
+/* #map {
+  width: 10em;
+} */
