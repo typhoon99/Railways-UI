@@ -1,3 +1,24 @@
+    
+   
+   
+       .radio-tile-group .card{
+            width: 15rem;
+            background-color: rgb(176 206 255 / 15%);
+        }
+
+        .radio-tile-group .card-body {
+            padding: -0.75rem !important;
+        }
+
+    .radio-tile:hover, .radio-button:hover+.radio-tile ,
+    .radio-button:checked+.radio-tile{
+        background-color: #f44336;
+        border: 2px solid #f44336;
+        color: white;
+        transform: scale(1.1, 1.1);
+       
+    }
+    
     .container {
         display: flex;
         justify-content: center;
@@ -67,7 +88,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        border: 2px solid #f44336;
+        border: 2px solid #ff865b ;
         border-radius: 5px;
         padding: 1rem;
         transition: transform 300ms ease;
@@ -83,13 +104,7 @@
     }
 
 
-    .radio-tile:hover, .radio-button:hover+.radio-tile,
-    .radio-button:checked+.radio-tile {
-        background-color: #f44336;
-        border: 2px solid #f44336;
-        color: white;
-        transform: scale(1.1, 1.1);
-    }
+    
 
     .radio-tile-label {
         color: black;
