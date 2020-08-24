@@ -129,7 +129,7 @@ $(document).ready(function(){
 					"Design,develop and installation of occupancy sensors to office buildings. (Offline)",
 					"Automation of measuring & recording systems various electrical equipments (Offline)",
 					"Multi Skilling of staff  to get optimum utilization of  manpower (Offline)",
-					"Temperature sensing,monitoring,communicating&preventive action in power supply panels (Offline)",
+					"Temperature sensing, monitoring, communicating & preventive action in power supply panels (Offline)",
 					"Optimising use of air-conditioning for equipments and human comfort (Offline)",
 				],
 			},
