@@ -3,6 +3,7 @@
    
        .radio-tile-group .card{
             width: 15rem;
+            height: 15rem;
             background-color: rgb(176 206 255 / 15%);
         }
 
@@ -26,12 +27,12 @@
         /* height: 110vh; */
     }
 
-    .radio-tile-group {
+    /* .radio-tile-group {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
-    }
+    } */
 
     .input-container {
         position: relative;
@@ -85,7 +86,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center;    
         width: 100%;
         height: 100%;
         border: 2px solid #ff865b ;
