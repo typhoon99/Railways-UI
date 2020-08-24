@@ -137,15 +137,15 @@ $(document).ready(function(){
 				subcategories: [
 					"Green energy: Electricity generation through piezoelectric mechanism  (Offline)",
 					"Feasibility and suitability of installation of small scale on-grid wind mills over OHE masts (Offline)",
-					"Potential of utilisation of surplus railway land for  solar power plants  (Offline)",
+					"Potential of utilization of surplus railway land for  solar power plants  (Offline)",
 					"Green buildings: Possibility and challenges in Railways’ context  (Offline)",
-					"Water Desaliantion plants: can coastal railways in India learn & adopt from Israel? (Offline)",
+					"Water Desalination plants: can coastal railways in India learn & adopt from Israel? (Offline)",
 					"Type of treatment to be given to rails to restrict corrosion/liner biting (Offline)",
 					"Detection if rail fractures through detection of discontinuity in rails by OFC cables  (Offline)",
 					"To make track free from glued joint, axle counter and signaling elements (Offline)",
 					"Use of railway land for solar panels to avoid CRO . (Offline)",
 					"Automation of water distribution system and getting rid of valve operating system (Offline)",
-					"Business development by utilising Roof Tops Of Large COP areas (Offline)",
+					"Business development by utilizing Roof Tops Of Large COP areas (Offline)",
 					"Replacement of Iron/Steel  material in FOBs, Lift Frames, etc in coastal area (Offline)",
 				],
 			},
@@ -192,7 +192,7 @@ $(document).ready(function(){
 			},
 			"Operations Management and Logistics": {
 				subcategories: [
-					"Contactless integrated payement system",
+					"Contact-less integrated payment system",
 					"Bicycle train integration",
 					"Integrated control system for suburban railway",
 					"Crew Scheduling system for suburban railway",
@@ -218,7 +218,7 @@ $(document).ready(function(){
 					"Vibration analysis & study of feasibility of onboard condition monitoring of rolling stock",
 					"Use of piezo based energy harvesting in wayside locations",
 					"Study preventive maintenance schedule & optimise the activities",
-					"Study air suspension system,FIBA and comapre with spring suspension system.",
+					"Study air suspension system,FIBA and compare with spring suspension system.",
 					"Study cases of train parting and suggest improvements",
 					"Pros & cons of train set type rolling stock wrt conventional locomotive lead trains",
 					"Study various types of coupler and their design",
@@ -231,7 +231,7 @@ $(document).ready(function(){
 					"Failure analysis of V belt breakage in SGAC coaches",
 					"Maintenance and testing of healthiness of push pull system",
 					"AI based Fire detection and suppression system in EMU using CCTV.",
-					"Improvement of maintenance efficiency by reorganisation of maintenance sections",
+					"Improvement of maintenance efficiency by reorganization of maintenance sections",
 					"Automation of maintenance activities.",
 					"Study & Update in cleaning practices of EMU coaches.",
 				],
@@ -315,10 +315,12 @@ $(document).ready(function(){
 				},
 				showCancelButton: true,
 				confirmButtonText: "Submit",
-				showLoadedOnConfirm: true,
-				preConfirm: (login) => {
+				preConfirm: (proj) => {
 					$("#select-project-tab").first().addClass("filled");
-					$(".subcategory").click();
+					$('#lblCustom').html(proj);
+					$("#customProj").removeClass('d-none');
+					// console.log($("#subcategoryCustom").next());
+					$("#subcategoryCustom").next().click();
 				},
 				allowOutsideClick: () => !Swal.isLoading(),
 			});

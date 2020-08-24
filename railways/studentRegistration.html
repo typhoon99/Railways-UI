@@ -108,7 +108,7 @@
                 <div class="col">
                     <div class="register-section">
                         <div class="section-caption">
-                            <h2>Student Registration</h2>
+                            <h2>Student Application</h2>
                         </div>
                         <ul class="nav nav-tabs register-tab" id="register-tab" role="tablist">
                             <li class="nav-item">
@@ -133,9 +133,10 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link register-admin" id="register-tab" data-toggle="tab" href="#register-step3" role="tab"
-                                    aria-controls="register-admin" aria-selected="false">
-                                    <i class="fas fa-train  reg-ico"></i>
+                                <a class="nav-link register-admin" id="register-tab" data-toggle="tab"
+                                    href="#register-step3" role="tab" aria-controls="register-admin"
+                                    aria-selected="false">
+                                    <i class="fas fa-brain  reg-ico"></i>
                                     <span class="reg-heading">
                                         Step 3
                                     </span>
@@ -157,68 +158,92 @@
                                                         <div class="row mb-4">
                                                             <div class="col">
                                                                 <h3>
-                                                                    If you have already Registered with AICTE Internship Portal, <a class="text-primary" href="./login.html" target="_blank">Click Here</a> to
+                                                                    If you have already Registered with AICTE Internship
+                                                                    Portal, <a class="text-primary" href="./login.html"
+                                                                        target="_blank">Click Here</a> to
                                                                     Login.</h3>
                                                             </div>
                                                         </div>
                                                         <div class="row mb-4">
                                                             <div class="col-md-6 ">
-                                                                <input type="radio" class="mx-2" name="organisation1" id="id1" value="yes" required="">AICTE Affiliated
+                                                                <input type="radio" class="mx-2" name="organisation1"
+                                                                    id="id1" value="yes" required="">AICTE Affiliated
                                                                 Organisation
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <input type="radio" class="mx-2" value="no" name="organisation1" id="id2">Non AICTE
+                                                                <input type="radio" class="mx-2" value="no"
+                                                                    name="organisation1" id="id2">Non AICTE
                                                                 Affiliated Organisation
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md" id="id3">
-                                                                <label for="fname" class="float-left"><b>University/College/Institute Name</b> <b
-                                                                        style="color:red">*</b></label>
-                                                                <input type="text" name="my_institute_name" id="my_institute_name" class="form-control mb-4"
-                                                                    placeholder="University/College/Institute Name" required="">
+                                                                <label for="fname"
+                                                                    class="float-left"><b>University/College/Institute
+                                                                        Name</b> <b style="color:red">*</b></label>
+                                                                <input type="text" name="my_institute_name"
+                                                                    id="my_institute_name" class="form-control mb-4"
+                                                                    placeholder="University/College/Institute Name"
+                                                                    required="">
                                                             </div>
                                                             <div class="col-md" id="id4" style="display:none">
-                                                                <label for="fname" class="float-left"><b>University/College/Institute
+                                                                <label for="fname"
+                                                                    class="float-left"><b>University/College/Institute
                                                                         Name</b> <b style="color:red">*</b></label>
-                                                                <input type="text" onchange="validatespecialstrings1(this)" id="my_institute_name1"
-                                                                    name="my_institute_name1" class="form-control mb-4" placeholder="University/College/Institute Name"
+                                                                <input type="text"
+                                                                    onchange="validatespecialstrings1(this)"
+                                                                    id="my_institute_name1" name="my_institute_name1"
+                                                                    class="form-control mb-4"
+                                                                    placeholder="University/College/Institute Name"
                                                                     required="">
                                                             </div>
                                                             <div class="col-md">
                                                                 <label for="lname" class="float-left"><b>Student ID
-                                                                        (Enrolment Number)</b><b style="color:red">*</b></label>
-                                                                <input type="text" name="student_id" onchange="function validatestringsandnumber1(this)" id="student_id"
-                                                                    maxlength="14" class="form-control mb-4" placeholder="Student ID (Enrolment Number)" required="">
+                                                                        (Enrolment Number)</b><b
+                                                                        style="color:red">*</b></label>
+                                                                <input type="text" name="student_id"
+                                                                    onchange="function validatestringsandnumber1(this)"
+                                                                    id="student_id" maxlength="14"
+                                                                    class="form-control mb-4"
+                                                                    placeholder="Student ID (Enrolment Number)"
+                                                                    required="">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md">
                                                                 <label for="fname" class="float-left"><b>First Name</b>
                                                                     <b style="color:red">*</b></label>
-                                                                <input type="text" name="fname" id="fname" onchange="validatestrings1(this)" class="form-control mb-4"
-                                                                    placeholder="First Name" required="">
+                                                                <input type="text" name="fname" id="fname"
+                                                                    onchange="validatestrings1(this)"
+                                                                    class="form-control mb-4" placeholder="First Name"
+                                                                    required="">
                                                             </div>
                                                             <div class="col-md">
                                                                 <label for="fname" class="float-left"><b>Middle
                                                                         Name</b></label>
-                                                                <input type="text" name="student_middle_name" id="student_middle_name" onchange="validatestrings1(this)"
+                                                                <input type="text" name="student_middle_name"
+                                                                    id="student_middle_name"
+                                                                    onchange="validatestrings1(this)"
                                                                     class="form-control mb-4" placeholder="Middle Name">
                                                             </div>
                                                             <div class="col-md">
                                                                 <label for="lname" class="float-left"><b>Last
                                                                         Name</b></label>
-                                                                <input type="text" name="lname" onchange="validatestrings1(this)" id="lname" class="form-control mb-4"
-                                                                    placeholder="Last Name">
+                                                                <input type="text" name="lname"
+                                                                    onchange="validatestrings1(this)" id="lname"
+                                                                    class="form-control mb-4" placeholder="Last Name">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md">
-                                                                <label for="state" class="float-left"><b>State/UT</b><b style="color:red">*</b> </label>
+                                                                <label for="state" class="float-left"><b>State/UT</b><b
+                                                                        style="color:red">*</b> </label>
                                                                 <div class="form-group">
                                                                     <!-- <input type="text" name="state" id="state"onchange="validatestrings(this)" class="form-control mb-4 placeholder="State" required> -->
-                                                                    <select onchange="print_city('city', this.selectedIndex);" id="state" name="state"
-                                                                        class="form-control" required="">
+                                                                    <select
+                                                                        onchange="print_city('city', this.selectedIndex);"
+                                                                        id="state" name="state" class="form-control"
+                                                                        required="">
                                                                         <option value="">Select State</option>
                                                                         <option value="Andaman &amp; Nicobar">Andaman
                                                                             &amp; Nicobar</option>
@@ -267,15 +292,17 @@
                                                                         <option value="Uttarakhand">Uttarakhand</option>
                                                                         <option value="West Bengal">West Bengal</option>
                                                                     </select>
-                                                
+
                                                                 </div>
                                                             </div>
-                                                
+
                                                             <div class="col-md">
-                                                                <label for="city" class="float-left"><b>City</b><b style="color:red">*</b> </label>
+                                                                <label for="city" class="float-left"><b>City</b><b
+                                                                        style="color:red">*</b> </label>
                                                                 <div class="form-group">
                                                                     <!--  <input type="text" name="city" id="city" class="form-control mb-4" placeholder="City"required> -->
-                                                                    <select id="city" name="city" class="form-control" required="">
+                                                                    <select id="city" name="city" class="form-control"
+                                                                        required="">
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -284,40 +311,52 @@
                                                             <div class="col-md">
                                                                 <label for="contactnum" class="float-left"><b>Contact
                                                                         Number</b><b style="color:red">*</b></label>
-                                                                <input type="text" name="contactnum" id="contactnum" onchange="phonenumber1(this)"
-                                                                    class="form-control mb-4" placeholder="Contact Number" required="">
+                                                                <input type="text" name="contactnum" id="contactnum"
+                                                                    onchange="phonenumber1(this)"
+                                                                    class="form-control mb-4"
+                                                                    placeholder="Contact Number" required="">
                                                             </div>
                                                             <div class="col-md">
                                                                 <div class="form-group">
-                                                                    <label for="email" class="float-left"><b>Email</b><b style="color:red">*</b></label>
-                                                                    <input type="email" name="email" id="email" onchange="validateemail(this)" class="form-control mb-4"
-                                                                        placeholder="E-mail" required="">
+                                                                    <label for="email" class="float-left"><b>Email</b><b
+                                                                            style="color:red">*</b></label>
+                                                                    <input type="email" name="email" id="email"
+                                                                        onchange="validateemail(this)"
+                                                                        class="form-control mb-4" placeholder="E-mail"
+                                                                        required="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col">
                                                                 <!-- Email -->
-                                                                <label for="" class="float-left"><b>Password</b><b style="color:red">*</b></label>
-                                                                <input type="password" name="password" id="password" onchange="validatespecialstrings1(this)"
+                                                                <label for="" class="float-left"><b>Password</b><b
+                                                                        style="color:red">*</b></label>
+                                                                <input type="password" name="password" id="password"
+                                                                    onchange="validatespecialstrings1(this)"
                                                                     class="form-control mb-4" placeholder="Password">
-                                                                <input type="checkbox" onclick="showpassword()" size="15" maxlength="20" class="float-left"><span
-                                                                    class="form-group mx-2" style="float:left;line-height: 0.8;">Show
+                                                                <input type="checkbox" onclick="showpassword()"
+                                                                    size="15" maxlength="20" class="float-left"><span
+                                                                    class="form-group mx-2"
+                                                                    style="float:left;line-height: 0.8;">Show
                                                                     Password</span>
                                                             </div>
                                                             <div class="col">
                                                                 <!-- Email -->
                                                                 <label for="" class="float-left"><b>Confirm
                                                                         Password</b><b style="color:red">*</b></label>
-                                                                <input type="password" name="c_password" id="c_password" onchange="verifypassword();"
+                                                                <input type="password" name="c_password" id="c_password"
+                                                                    onchange="verifypassword();"
                                                                     class="form-control mb-4" placeholder="Password">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md">
                                                                 <label for="contactnum" class="float-left"><b>Select
-                                                                        Security Question</b><b style="color:red">*</b></label>
-                                                                <select name="security" id="security" class="form-control">
+                                                                        Security Question</b><b
+                                                                        style="color:red">*</b></label>
+                                                                <select name="security" id="security"
+                                                                    class="form-control">
                                                                     <option value="What Is the Pet Name">What is your
                                                                         Pet Name</option>
                                                                     <option value="What is the first school Name">What
@@ -337,10 +376,14 @@
                                                                 <div class="form-group">
                                                                     <label for="email" class="float-left"><b>Security
                                                                             Answer</b><b style="color:red">*</b></label>
-                                                                    <input type="password" name="answer" id="answer" class="form-control mb-4"
+                                                                    <input type="password" name="answer" id="answer"
+                                                                        class="form-control mb-4"
                                                                         placeholder="Security Answer" required="">
-                                                                    <input type="checkbox" onclick="showanswer()" size="15" maxlength="20" style="float:left;"><span
-                                                                        class="form-group mx-2" style="float:left;line-height: 0.8;">Show
+                                                                    <input type="checkbox" onclick="showanswer()"
+                                                                        size="15" maxlength="20"
+                                                                        style="float:left;"><span
+                                                                        class="form-group mx-2"
+                                                                        style="float:left;line-height: 0.8;">Show
                                                                         answer</span>
                                                                 </div>
                                                             </div>
@@ -348,15 +391,20 @@
                                                         <div class="row justify-content-center">
                                                             <div class="col-auto my-2">
                                                                 <div class="form-group">
-                                                                    <div class="g-recaptcha" data-callback="recaptchaCallback"
-                                                                        data-sitekey="6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT" required="">
+                                                                    <div class="g-recaptcha"
+                                                                        data-callback="recaptchaCallback"
+                                                                        data-sitekey="6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT"
+                                                                        required="">
                                                                         <div style="width: 304px; height: 78px;">
                                                                             <div><iframe
                                                                                     src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT&amp;co=aHR0cHM6Ly9pbnRlcm5zaGlwLmFpY3RlLWluZGlhLm9yZzo0NDM.&amp;hl=en&amp;v=AFBwIe6h0oOL7MOVu88LHld-&amp;size=normal&amp;cb=tfaf7i8v30ar"
-                                                                                    width="304" height="78" role="presentation" name="a-7c46h92gpya6" frameborder="0"
-                                                                                    scrolling="no"
+                                                                                    width="304" height="78"
+                                                                                    role="presentation"
+                                                                                    name="a-7c46h92gpya6"
+                                                                                    frameborder="0" scrolling="no"
                                                                                     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                                                            </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                                            </div><textarea id="g-recaptcha-response"
+                                                                                name="g-recaptcha-response"
                                                                                 class="g-recaptcha-response"
                                                                                 style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
                                                                         </div><iframe style="display: none;"></iframe>
@@ -367,10 +415,12 @@
                                                         </div>
                                                         <center>
                                                             <!--   <div class="g-recaptcha" data-sitekey="6Lc80fMUAAAAAPKgu09F-bKcpaA-xI4IhyDyloNn" id="grecaptcha"> </div>  <span id="captcha_error" class="text-danger"></span> -->
-                                                
-                                                            <button type="submit" name="student_register" id="student_register" class="btn btn-primary w-50"
+
+                                                            <button type="submit" name="student_register"
+                                                                id="student_register" class="btn btn-primary w-50"
                                                                 style="margin-top:10px" disabled="">
-                                                                Register <i class="ml-2 fas fa-sign-out-alt"></i></button>
+                                                                Register <i
+                                                                    class="ml-2 fas fa-sign-out-alt"></i></button>
                                                         </center>
                                                     </form>
                                                 </div>
@@ -382,463 +432,477 @@
                             </div>
 
                             <div class="tab-pane" id="register-admin" role="tabpanel"
-                                aria-labelledby="register-admin-tab"
-                                <section class="mt-5">
-                                    <div class="container ">
-                                        <div id="coporate_form">
-                                            <form action="" method="post" id="reg-form">
-                                            
-                                                <div class="row mt-3 ">
-                                                    <div class="col-md-4 col-4  offset-md-8">
-                                            
-                                                        <img class="img" id="profile-img" src="/images/railways/upload-placeholder.png" alt="your image" />
-                                                    </div>
+                                aria-labelledby="register-admin-tab" <section class="mt-5">
+                                <div class="container ">
+                                    <div id="coporate_form">
+                                        <form action="" method="post" id="reg-form">
+
+                                            <div class="row mt-3 ">
+                                                <div class="col-md-4 col-4  offset-md-8">
+
+                                                    <img class="img" id="profile-img"
+                                                        src="/images/railways/upload-placeholder.png"
+                                                        alt="your image" />
                                                 </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-4 col-8  offset-md-8">
-                                            
-                                                        <input type='file' onchange="readURL(this); " />
-                                                    </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-4 col-8  offset-md-8">
+
+                                                    <input type='file' onchange="readURL(this); " />
                                                 </div>
-                                            
-                                                <div class="row  justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <label for="user-name">Name of the candidate (in block letters. Leave a space
-                                                            between
-                                                            first name, middle name and surname)</label>
-                                                        <input type="text" name="user-name" class="form-control" id="user-name">
-                                                    </div>
+                                            </div>
+
+                                            <div class="row  justify-content-center align-items-center mt-5 d-none">
+                                                <div class="col-md-9">
+                                                    <label for="user-name">Name of the candidate (in block letters.
+                                                        Leave a space
+                                                        between
+                                                        first name, middle name and surname)</label>
+                                                    <input type="text" name="user-name" class="form-control"
+                                                        id="user-name">
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <label for="corr-address">Correspondence Address(in Block letters)</label>
-                                                        <textarea id="corr-address" class="form-control" rows="3"></textarea>
-                                                    </div>
-                                            
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9">
+                                                    <label for="corr-address">Correspondence Address(in Block
+                                                        letters)</label>
+                                                    <textarea id="corr-address" class="form-control"
+                                                        rows="3"></textarea>
                                                 </div>
-                                                <div class="row justify-content-center align-items-center mt-3">
-                                            
-                                                    <div class="col-md-3">
-                                                        <label for="corr-telno">Telephone NO.</label>
-                                                        <input type="number" name="corr-telno" class="form-control" id="corr-telno">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="corr-faxno">Fax NO.</label>
-                                                        <input type="number" name="corr-faxno" class="form-control" id="corr-faxno">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="corr-mobno">Mobile NO.</label>
-                                                        <input type="number" name="corr-mobno" class="form-control" id="corr-mobno">
-                                            
-                                            
-                                                    </div>
-                                            
+
+                                            </div>
+                                            <div class="row justify-content-center align-items-center mt-3">
+
+                                                <div class="col-md-3">
+                                                    <label for="corr-telno">Telephone NO.</label>
+                                                    <input type="number" name="corr-telno" class="form-control"
+                                                        id="corr-telno">
                                                 </div>
-                                            
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <label for="per-address">Permanent Address(in Block letters)</label>
-                                                        <textarea id="per-address" class="form-control" rows="3"></textarea>
-                                            
-                                            
-                                            
-                                                    </div>
+                                                <div class="col-md-3">
+                                                    <label for="corr-faxno">Fax NO.</label>
+                                                    <input type="number" name="corr-faxno" class="form-control"
+                                                        id="corr-faxno">
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-3">
-                                            
-                                                    <div class="col-md-3">
-                                                        <label for="corr-telno">Telephone NO.</label>
-                                                        <input type="number" name="corr-telno" class="form-control" id="corr-telno">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="corr-faxno">Fax NO.</label>
-                                                        <input type="number" name="corr-faxno" class="form-control" id="corr-faxno">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="corr-mobno">Mobile NO.</label>
-                                                        <input type="number" name="corr-mobno" class="form-control" id="corr-mobno">
-                                                    </div>
-                                            
+                                                <div class="col-md-3">
+                                                    <label for="corr-mobno">Mobile NO.</label>
+                                                    <input type="number" name="corr-mobno" class="form-control"
+                                                        id="corr-mobno">
+
+
                                                 </div>
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-4 ">
-                                                        <label for="dob">Date of Birth</label>
-                                                        <input type="date" width="25%" name="dob" class="form-control" id="dob">
-                                                    </div>
-                                                    <div class="col-md-4 offset-md-1">
-                                                        <label for="gender"> Gender:</label>
-                                                        <div class="form-check">
-                                            
-                                                            <div class="row">
-                                                                <div class="col-3">
-                                            
-                                                                    <input class="form-check-input " type="radio" name="gender" id="gen-male" value="male">
-                                                                    <label class="form-check-label" for="gen-male">Male </label>
-                                            
-                                                                </div>
-                                                                <div class="col-3">
-                                            
-                                                                    <input class="form-check-input " type="radio" name="gender" id="gen-female" value="female">
-                                                                    <label class="form-check-label" for="gen-female">Female </label>
-                                                                </div>
-                                                            </div>
-                                            
-                                                        </div>
-                                            
-                                                    </div>
-                                            
+
+                                            </div>
+
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9">
+                                                    <label for="per-address">Permanent Address(in Block letters)</label>
+                                                    <textarea id="per-address" class="form-control" rows="3"></textarea>
+
+
+
                                                 </div>
-                                            
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <label for="user-name">Educational Qualification(s) (Highest to be mentioned
-                                                            first)</label>
-                                                    </div>
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center mt-3">
+
+                                                <div class="col-md-3">
+                                                    <label for="corr-telno">Telephone NO.</label>
+                                                    <input type="number" name="corr-telno" class="form-control"
+                                                        id="corr-telno">
                                                 </div>
-                                                <div id="no-more-tables" class="row justify-content-center align-items-center mt-3">
-                                                    <table class="col-md-9 table-bordered table-striped table-condensed cf">
-                                            
-                                                        <thead class="cf">
-                                                            <tr>
-                                                                <th>Sr. No.</th>
-                                                                <th>Degree/Qualification acquired</th>
-                                                                <th>Name of college/school/institution</th>
-                                                                <th>Univ./Board</th>
-                                                                <th>Marks Obtained (% age)</th>
-                                                                <th>Year</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td data-title="Sr. No."><h3>10th</h3>
-                                                                </td>
-                                                                <td data-title="Qualification acquired"><input type="text" name="quali-aqu1"
-                                                                        class="form-control inpt" id="quali-aqu1"></td>
-                                                                <td data-title="Name of institution"><input type="text" name="coll-name1" class="form-control inpt"
-                                                                        id="coll-name1"></td>
-                                                                <td data-title="Univ./Board"> <input type="text" name="univ-board1" class="form-control inpt"
-                                                                        id="univ-board1"></td>
-                                                                <td data-title="Marks Obtained(%age)"><input type="number" name="marks1" class="form-control inpt"
-                                                                        id="marks1"></td>
-                                                                <td data-title="Year"> <input type="number" name="year1" class="form-control inpt" id="year1"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-title="Sr. No."><h3>12th / Diploma</h3>
-                                                                </td>
-                                                                <td data-title="Qualification acquired"><input type="text" name="quali-aqu2"
-                                                                        class="form-control inpt" id="quali-aqu2"></td>
-                                                                <td data-title="Name of institution"><input type="text" name="coll-name2" class="form-control inpt"
-                                                                        id="coll-name2"></td>
-                                                                <td data-title="Univ./Board"> <input type="text" name="univ-board2" class="form-control inpt"
-                                                                        id="univ-board2"></td>
-                                                                <td data-title="Marks Obtained(%age)"><input type="number" name="marks2" class="form-control inpt"
-                                                                        id="marks2"></td>
-                                                                <td data-title="Year"> <input type="number" name="year2" class="form-control inpt" id="year2"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-title="Sr. No."><h3>Degree</h3>
-                                                                </td>
-                                                                <td data-title="Qualification acquired"><input type="text" name="quali-aqu3"
-                                                                        class="form-control inpt" id="quali-aqu3"></td>
-                                                                <td data-title="Name ofinstitution"><input type="text" name="coll-name3" class="form-control inpt"
-                                                                        id="coll-name3"></td>
-                                                                <td data-title="Univ./Board"> <input type="text" name="univ-board3" class="form-control inpt"
-                                                                        id="univ-board3"></td>
-                                                                <td data-title="Marks Obtained(%age)"><input type="number" name="marks3" class="form-control inpt"
-                                                                        id="marks3"></td>
-                                                                <td data-title="Year"> <input type="number" name="year3" class="form-control inpt" id="year3"></td>
-                                                            </tr>
-                                                            
-                                                            <tr>
-                                                                <td data-title="Sr. No.">
-                                                                    <h3>Master / PhD</h3>
-                                                                </td>
-                                                                <td data-title="Qualification acquired"><input type="text" name="quali-aqu3" class="form-control inpt"
-                                                                        id="quali-aqu3"></td>
-                                                                <td data-title="Name ofinstitution"><input type="text" name="coll-name3" class="form-control inpt" id="coll-name3">
-                                                                </td>
-                                                                <td data-title="Univ./Board"> <input type="text" name="univ-board3" class="form-control inpt" id="univ-board3"></td>
-                                                                <td data-title="Marks Obtained(%age)"><input type="number" name="marks3" class="form-control inpt" id="marks3"></td>
-                                                                <td data-title="Year"> <input type="number" name="year3" class="form-control inpt" id="year3"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                <div class="col-md-3">
+                                                    <label for="corr-faxno">Fax NO.</label>
+                                                    <input type="number" name="corr-faxno" class="form-control"
+                                                        id="corr-faxno">
                                                 </div>
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <div>
-                                                            <label for="project-det"> Details of projects undertaken,if any :</label>
-                                                            <textarea id="project-det" class="form-control mt-1" rows="3"></textarea>
-                                                        </div>
-                                                        <div>
-                                                            <label for="present-stat">Present Status of Projects (Completed, Ongoing etc.)</label>
-                                                            <textarea id="present-stat" class="form-control mt-1" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-md-3">
+                                                    <label for="corr-mobno">Mobile NO.</label>
+                                                    <input type="number" name="corr-mobno" class="form-control"
+                                                        id="corr-mobno">
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9  ">
-                                                        <label for="dis-int">Discipline(s) in which internship is sought</label>
-                                                        <textarea id="dis-int" class="form-control mt-1" rows="3"></textarea>
-                                                    </div>
+
+                                            </div>
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-4 ">
+                                                    <label for="dob">Date of Birth</label>
+                                                    <input type="date" width="25%" name="dob" class="form-control"
+                                                        id="dob">
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9  ">
-                                                        <label for="area-work">Specific area(s) of work (in block letters) for the
-                                                            internship, in order
-                                                            of
-                                                            priority (Project Summary in 200 word to be attached)</label>
+                                                <div class="col-md-4 offset-md-1">
+                                                    <label for="gender"> Gender:</label>
+                                                    <div class="form-check">
+
                                                         <div class="row">
-                                                            <div class="col-4">
-                                                                <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
+                                                            <div class="col-3">
+                                                                <input class="form-check-input " type="radio"
+                                                                    name="gender" id="gen-male" value="male">
+                                                                <label class="form-check-label"
+                                                                    for="gen-male">Male</label>
                                                             </div>
-                                                            <div class="col-4">
-                                                                <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
+                                                            <div class="col-3">
+                                                                <input class="form-check-input " type="radio"
+                                                                    name="gender" id="gen-female" value="female">
+                                                                <label class="form-check-label"
+                                                                    for="gen-female">Female</label>
                                                             </div>
-                                                            <div class="col-4">
-                                                                <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
+                                                            <div class="col-3">
+                                                                <input class="form-check-input " type="radio"
+                                                                    name="gender" id="gen-p" value="female">
+                                                                <label class="form-check-label"
+                                                                    for="gen-others">Others</label>
                                                             </div>
                                                         </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9">
+                                                    <label for="user-name">Educational Qualification(s) (Highest to be
+                                                        mentioned
+                                                        first)</label>
+                                                </div>
+                                            </div>
+                                            <div id="no-more-tables"
+                                                class="row justify-content-center align-items-center mt-3">
+                                                <table class="col-md-9 table-bordered table-striped table-condensed cf">
+
+                                                    <thead class="cf">
+                                                        <tr>
+                                                            <th>Sr. No.</th>
+                                                            <th>Degree/Qualification acquired</th>
+                                                            <th>Name of college/school/institution</th>
+                                                            <th>Univ./Board</th>
+                                                            <th>Marks Obtained (% age)</th>
+                                                            <th>Year</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-title="Sr. No.">
+                                                                <h3>10th</h3>
+                                                            </td>
+                                                            <td data-title="Qualification acquired"><input type="text"
+                                                                    name="quali-aqu1" class="form-control inpt"
+                                                                    id="quali-aqu1"></td>
+                                                            <td data-title="Name of institution"><input type="text"
+                                                                    name="coll-name1" class="form-control inpt"
+                                                                    id="coll-name1"></td>
+                                                            <td data-title="Univ./Board"> <input type="text"
+                                                                    name="univ-board1" class="form-control inpt"
+                                                                    id="univ-board1"></td>
+                                                            <td data-title="Marks Obtained(%age)"><input type="number"
+                                                                    name="marks1" class="form-control inpt" id="marks1">
+                                                            </td>
+                                                            <td data-title="Year"> <input type="number" name="year1"
+                                                                    class="form-control inpt" id="year1"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Sr. No.">
+                                                                <h3>12th / Diploma</h3>
+                                                            </td>
+                                                            <td data-title="Qualification acquired"><input type="text"
+                                                                    name="quali-aqu2" class="form-control inpt"
+                                                                    id="quali-aqu2"></td>
+                                                            <td data-title="Name of institution"><input type="text"
+                                                                    name="coll-name2" class="form-control inpt"
+                                                                    id="coll-name2"></td>
+                                                            <td data-title="Univ./Board"> <input type="text"
+                                                                    name="univ-board2" class="form-control inpt"
+                                                                    id="univ-board2"></td>
+                                                            <td data-title="Marks Obtained(%age)"><input type="number"
+                                                                    name="marks2" class="form-control inpt" id="marks2">
+                                                            </td>
+                                                            <td data-title="Year"> <input type="number" name="year2"
+                                                                    class="form-control inpt" id="year2"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Sr. No.">
+                                                                <h3>Degree</h3>
+                                                            </td>
+                                                            <td data-title="Qualification acquired"><input type="text"
+                                                                    name="quali-aqu3" class="form-control inpt"
+                                                                    id="quali-aqu3"></td>
+                                                            <td data-title="Name ofinstitution"><input type="text"
+                                                                    name="coll-name3" class="form-control inpt"
+                                                                    id="coll-name3"></td>
+                                                            <td data-title="Univ./Board"> <input type="text"
+                                                                    name="univ-board3" class="form-control inpt"
+                                                                    id="univ-board3"></td>
+                                                            <td data-title="Marks Obtained(%age)"><input type="number"
+                                                                    name="marks3" class="form-control inpt" id="marks3">
+                                                            </td>
+                                                            <td data-title="Year"> <input type="number" name="year3"
+                                                                    class="form-control inpt" id="year3"></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td data-title="Sr. No.">
+                                                                <h3>Master / PhD</h3>
+                                                            </td>
+                                                            <td data-title="Qualification acquired"><input type="text"
+                                                                    name="quali-aqu3" class="form-control inpt"
+                                                                    id="quali-aqu3"></td>
+                                                            <td data-title="Name ofinstitution"><input type="text"
+                                                                    name="coll-name3" class="form-control inpt"
+                                                                    id="coll-name3">
+                                                            </td>
+                                                            <td data-title="Univ./Board"> <input type="text"
+                                                                    name="univ-board3" class="form-control inpt"
+                                                                    id="univ-board3"></td>
+                                                            <td data-title="Marks Obtained(%age)"><input type="number"
+                                                                    name="marks3" class="form-control inpt" id="marks3">
+                                                            </td>
+                                                            <td data-title="Year"> <input type="number" name="year3"
+                                                                    class="form-control inpt" id="year3"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <label for="project-det"> Details of projects undertaken,if any
+                                                            :</label>
+                                                        <textarea id="project-det" class="form-control mt-1"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                    <div>
+                                                        <label for="present-stat">Present Status of Projects (Completed,
+                                                            Ongoing etc.)</label>
+                                                        <textarea id="present-stat" class="form-control mt-1"
+                                                            rows="3"></textarea>
                                                     </div>
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-4  ">
-                                                        <label for="location">Location/City preferred:</label>
-                                                        <input type="text" name="location" class="form-control col-lg-8" id="location">
-                                                    </div>
-                                            
-                                                    <div class="col-md-5 ">
-                                                        <label for="duration">Duration months:</label>
-                                                        <input type="number" name="duration" class="form-control col-lg-7" id="duration">
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9  ">
+                                                    <label for="dis-int">Discipline(s) in which internship is
+                                                        sought</label>
+                                                    <textarea id="dis-int" class="form-control mt-1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9  ">
+                                                    <label for="rel-info">Any other relevant information:</label>
+                                                    <input type="number" name="rel-info" class="form-control"
+                                                        id="rel-info">
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center mt-5">
+                                                <div class="col-md-9  ">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cer-script">
+                                                        <label class="form-check-label" for="cer-script">
+                                                            I certify that the information furnished above is true to
+                                                            the best of my
+                                                            knowledge and belief.
+                                                        </label>
                                                     </div>
                                                 </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9  ">
-                                                        <label for="rel-info">Any other relevant information:</label>
-                                                        <input type="number" name="rel-info" class="form-control" id="rel-info">
-                                                    </div>
-                                                </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9  ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="cer-script">
-                                                            <label class="form-check-label" for="cer-script">
-                                                                I certify that the information furnished above is true to the best of my
-                                                                knowledge and
-                                                                belief:
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                                <div class="row mt-5 ">
-                                                    <div class="col-6 offset-1 offset-md-6">
-                                            
-                                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-6 col-12  offset-md-6">
-                                            
-                                                        <label for="imageUpload"> Upload the Signature of the candidate</label>
-                                                    </div>
-                                                </div>
-                                            
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                            
-                                                    <div class="col-md-4">
-                                                        <label for="ref-date">Date.</label>
-                                                        <input type="text" name="ref-date" class="form-control col-lg-13" disabled id="ref-date">
-                                                    </div>
-                                                    <div class="col-md-5">
-                                                        <label for="ref-place">Place</label>
-                                                        <input type="text" name="ref-place" class="form-control col-lg-10" id="ref-place">
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="row justify-content-center align-items-center mt-5">
-                                                    <div class="col-md-9">
-                                                        <label for="ref-txt ">Authentication of particulars furnished above by the
-                                                            Institute/University</label>
-                                                        <label for="ref-txt ">This is to certify that the information furnished by
-                                                            Mrs./Ms./Mr. <input type="text" name="ref-user-name" class="form-control col-lg-3 d-inline"
-                                                                id="ref-user-name">
-                                                            in the form of application
-                                                            above is correct to the best of our knowledge.
-                                                            Recommendation by HOD/faculty.</label>
-                                                        <textarea id="ref-rec-1" class="form-control d-inline col-lg-3 mt-1" rows="1"></textarea>
-                                                        <textarea id="ref-rec-2" class="form-control d-inline mx-md-2 col-lg-3 mt-1" rows="1"></textarea>
-                                            
-                                                    </div>
-                                            
-                                                </div>
-                                                <div class="row mt-5 ">
-                                                    <div class="col-6 offset-1 offset-md-6">
-                                            
-                                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-6 col-12  offset-md-6">
-                                            
-                                                        <label for="imageUpload">(Signature &amp; Seal of Authorized Official)</label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <center>
-                                        <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
-                                            Next <i class="ml-2 fas fa-sign-out-alt"></i></button>
-                                    </center>
+                                </div>
+                                <center>
+                                    <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
+                                        Next <i class="ml-2 fas fa-sign-out-alt"></i></button>
+                                </center>
                                 </section>
                             </div>
 
-                            
+
                             <div class="tab-pane" id="register-step3" role="tabpanel"
                                 aria-labelledby="register-employer-tab">
                                 <section class="mt-5">
                                     <div id="coporate_form" class="container md-4">
                                         <div class="row justify-content-center p-2 ">
                                             <div class="d-block">
-                                            <h3 class="px-4">Please fill in the below data to get an opportunity with Indian Railways.</h3>
-                                            <h3 class="pt-2 pb-2 text-center">Help us know you better!</h3>
+                                                <h3 class="px-4">Please fill in the below data to get an opportunity
+                                                    with Indian Railways.</h3>
+                                                <h3 class="pt-2 pb-2 text-center">Help us know you better!</h3>
                                             </div>
                                         </div>
+                                        <hr>
+                                        <div class="row m-2 p-2 justify-content-center">
+                                            <div class="col-md-5" id="id3">
+                                                <label for="txtName" class="float-left "><b>Government ID
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <select id="selectGovtId" type="text" class="form-control">
+                                                        <option value="aadhar">Aadhar</option>
+                                                        <option value="passport">Passport</option>
+                                                        <option value="pan">Pan</option>
+                                                        <option value="license">Driving License</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7" id="id3">
+                                                <label for="txtName" class="float-left "><b>Number
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <input id="txtGovtId" type="text" class="form-control" placeholder="8468635454">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
                                         <div class="row m-2 p-2 justify-content-center">
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Skills (eg: Python, Matlab)
+                                                <label for="txtName" class="float-left "><b>Skills (eg: Python,
+                                                        Matlab)
                                                     </b> <b style="color:red">*</b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Languages Known (eg: English, Hindi, Marathi)
+                                                <label for="txtName" class="float-left "><b>Languages Known (eg:
+                                                        English, Hindi, Marathi)
                                                     </b> <b style="color:red">*</b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row m-2 p-2">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Internship Experience
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Extra Curricular Activities
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row m-2 p-2">
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Certifications
+                                                <label for="txtName" class="float-left "><b>Internship Experience
                                                     </b> <b style="color:red">*</b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Career Interests
+                                                <label for="txtName" class="float-left "><b>Extra Curricular
+                                                        Activities
                                                     </b> <b style="color:red">*</b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row m-2 p-2">
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Technical Events
+                                                <label for="txtName" class="float-left "><b>Certifications
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Career Interests
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-2 p-2">
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Technical Events
                                                     </b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left h5"><b>Published Research
+                                                <label for="txtName" class="float-left "><b>Published Research
                                                     </b>
                                                 </label>
                                                 <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control" placeholder=""></textarea>
+                                                    <textarea id="txtName" type="text" class="form-control"
+                                                        placeholder=""></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="row justify-content-center">
-                                            <h4>Preferred Work locations for other Internship Opportunities (College, Home, Favourite Work Location)</h4>
-                                            <div class="row m-2 p-2 justify-content-center">
-                                                <div class="col-md-6" id="id3">
-                                                    <label for="txtName" class="float-left h5"><b>Priority 1
-                                                        </b> <b style="color:red">*</b>
-                                                    </label>
-                                                    <div class="input-group input-with-actions">
-                                                        <input id="txtName" type="text" class="form-control" placeholder="Mumbai">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6" id="id3">
-                                                    <label for="txtName" class="float-left h5"><b>Priority 2
-                                                        </b> <b style="color:red">*</b>
-                                                    </label>
-                                                    <div class="input-group input-with-actions">
-                                                        <input id="txtName" type="text" class="form-control" placeholder="Delhi">
-                                                    </div>
+                                            <div class="d-block">
+                                                <h4>Preferred Work locations for other Internship Opportunities (College,
+                                                    Home, Favourite Work Location)</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row m-2 p-2 justify-content-center">
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Priority 1
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <input id="txtName" type="text" class="form-control"
+                                                        placeholder="Mumbai">
                                                 </div>
                                             </div>
-
-                                            <div class="row m-2 p-2 justify-content-center">
-                                                <div class="col-md-6" id="id3">
-                                                    <label for="txtName" class="float-left h5"><b>Priority 3
-                                                        </b> <b style="color:red">*</b>
-                                                    </label>
-                                                    <div class="input-group input-with-actions">
-                                                        <input id="txtName" type="text" class="form-control" placeholder="Kolkata">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6" id="id3">
-                                                    <label for="txtName" class="float-left h5"><b>Priority 4
-                                                        </b> <b style="color:red">*</b>
-                                                    </label>
-                                                    <div class="input-group input-with-actions">
-                                                        <input id="txtName" type="text" class="form-control" placeholder="Chennai">
-                                                    </div>
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Priority 2
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <input id="txtName" type="text" class="form-control"
+                                                        placeholder="Delhi">
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr>
-                                        
+
+                                        <div class="row m-2 p-2 justify-content-center">
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Priority 3
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <input id="txtName" type="text" class="form-control"
+                                                        placeholder="Kolkata">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" id="id3">
+                                                <label for="txtName" class="float-left "><b>Priority 4
+                                                    </b> <b style="color:red">*</b>
+                                                </label>
+                                                <div class="input-group input-with-actions">
+                                                    <input id="txtName" type="text" class="form-control"
+                                                        placeholder="Chennai">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <center>
+                                            <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
+                                                Submit <i class="ml-2 fas fa-sign-out-alt"></i></button>
+                                        </center>
                                     </div>
                                 </section>
                             </div>
                         </div>
                         </form>
                     </div>
-
 
                     <div class="subscription-section">
                         <div class="section-content order-lg-1">
@@ -853,8 +917,8 @@
 
                             <h3>Subscribe to our newsletter</h3>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="snowseekinginternship@imaginxp.com"
-                                    aria-label="snowseekinginternship@imaginxp.com" aria-describedby="subscribe">
+                                <input type="text" class="form-control" placeholder="student@yourcollege.com"
+                                    aria-label="student@yourcollege.com" aria-describedby="subscribe">
                                 <div class="input-group-append">
                                     <button class="btn btn-secondary">Subscribe <i
                                             class="fas fa-arrow-right"></i></button>
