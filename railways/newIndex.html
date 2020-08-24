@@ -198,8 +198,10 @@
                                                 <div id="student_form">
                                                     <form method="post" class="text-center" action="./src/php/main.php">
                                                         <div class="row justify-content-center ">
+                                                            
                                                             <h3>Please select Project Category you are Interested in
                                                                 working as an Intern</h3>
+                                                               
                                                             <section class="pt-3" id="category">
                                                                 <div id="categoryRow" class="radio-tile-group row">
                                                                     <script id="categoryTemplate"
@@ -235,7 +237,11 @@
                                 <div class="container ">
                                     <div id="coporate_form">
                                         <div class="row justify-content-center">
-                                            <h3 id="subCategory-heading"></h3>
+                                            <!-- <div style="white-space: pre;"> -->
+                                                <div class="d-block">
+                                            <h3 id="subCategory-heading" class="text-center"></h3>
+                                            <h4 class="text-center">If your Preferred Project is not here Please<a href="#" id="subCategory-work" class="text-primary"> Click Here </a></h4>
+                                             </div> 
                                             <section class="pt-3" id="subCategorySection">
                                                 <div id="subCategoryRow" class="radio-tile-group row">
                                                     <script id="subCategoryTemplate" type="text/x-handlebars-template">
@@ -294,7 +300,7 @@
                                         <div id="coporate_form">
                                             <div class="row justify-content-center">
                                                 <h3>Please Select your Prefered Railway Zone</h3>
-                                            <section class="pt-3" id="zones">
+                                                <section class="pt-3" id="zones">
                                                 <div id="zonesRow" class="radio-tile-group row">
                                                     <script id="zoneTemplate" type="text/x-handlebars-template">
                                                         {{#each zones}}
@@ -323,7 +329,9 @@
                                 <section class="mt-5">
                                     <div id="coporate_form" class="container md-4">
                                         <div class="row justify-content-center">
+                                            
                                             <h3>Please Select your Prefered Railway Division</h3>
+                                             
                                             <section class="pt-3" id="divisions">
                                                 <div id="divisionRow" class="radio-tile-group row">
                                                     <script id="divisionTemplate" type="text/x-handlebars-template">

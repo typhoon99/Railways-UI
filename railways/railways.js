@@ -364,3 +364,19 @@ $(document).ready(function(){
 		});
 	});
 })
+$("#subCategory-work").on("click",function(){
+	Swal.fire({
+		title:"Submit your Project",
+		input:"text",
+		inputAttributes:{
+			autocapitalize:"off",
+		},
+		showCancelButton:true,
+		confirmButtonText:"Submit",
+		showLoadedOnConfirm:true,
+		preConfirm:(login)=>{
+			$("#select-zone-tab").tab("show");
+		},
+		allowOutsideClick:() => !Swal.isLoading(),
+	});
+})
