@@ -116,3 +116,7 @@
     .radio-tile-label {
         color: white;
     }
+
+    .filled{
+        color: #ff865b !important;
+    }

@@ -174,7 +174,7 @@ $(document).ready(function(){
 					"Development of efficient inventory management system (Offline)",
 				],
 			},
-			"Signaling & Telecommunication": {
+			"Signaling and Telecommunication": {
 				subcategories: [
 					"High reliability Train detection system (Offline)",
 					"Implementation of Integrated Security System (Offline)",
@@ -273,6 +273,8 @@ $(document).ready(function(){
 		$(this).append(
 			'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
 		);
+		$("#select-category-tab i").first().addClass("filled");
+		$("#select-category-tab span").first().addClass("filled");
 		var subHeading =
 			"Available Projects in: " + $(this).find("label").html();
 		$("#subCategory-heading").text(subHeading);
@@ -284,9 +286,9 @@ $(document).ready(function(){
 		// Compile the template data into a function
 		var templateScript = Handlebars.compile(template);
 		var catId = $(this).find("label").html();
-		// console.log(catId);
+		console.log(catId);
 		var subCats = context.categories[catId];
-		// console.log(subCats);
+		console.log(subCats);
 		var html = templateScript(subCats);
 		// console.log(html);
 		// Insert the HTML code into the page
@@ -304,12 +306,32 @@ $(document).ready(function(){
 			}
 		);
 
+		$("#subCategory-work").on("click", function () {
+			Swal.fire({
+				title: "Submit your Project",
+				input: "text",
+				inputAttributes: {
+					autocapitalize: "off",
+				},
+				showCancelButton: true,
+				confirmButtonText: "Submit",
+				showLoadedOnConfirm: true,
+				preConfirm: (login) => {
+					$("#select-project-tab").first().addClass("filled");
+					$(".subcategory").click();
+				},
+				allowOutsideClick: () => !Swal.isLoading(),
+			});
+		});
+
 		$(".subcategory").on("click", function () {
 			// console.log("subcat selected");
 			$(this).prev().attr("checked", "true");
 			$(this).append(
 				'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
 			);
+			$("#select-project-tab i").first().addClass("filled");
+			$("#select-project-tab span").first().addClass("filled");
 			// Retrieve the template data from the HTML (jQuery is used here).
 			var template = $("#zoneTemplate").html();
 			// Compile the template data into a function
@@ -334,6 +356,8 @@ $(document).ready(function(){
 				$(this).append(
 					'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
 				);
+				$("#select-zone-tab i").first().addClass("filled");
+				$("#select-zone-tab span").first().addClass("filled");
 				var template = $("#divisionTemplate").html();
 				// Compile the template data into a function
 				var templateScript = Handlebars.compile(template);
@@ -358,25 +382,11 @@ $(document).ready(function(){
 				);
 				$(".division").on("click", function () {
 					$(this).prev().attr("checked", "true");
+					$("#select-division-tab i").first().addClass("filled");
+					$("#select-division-tab span").first().addClass("filled");
 					window.location.href = "./studentRegistration.html";
 				});
 			});
 		});
-	});
-})
-$("#subCategory-work").on("click",function(){
-	Swal.fire({
-		title:"Submit your Project",
-		input:"text",
-		inputAttributes:{
-			autocapitalize:"off",
-		},
-		showCancelButton:true,
-		confirmButtonText:"Submit",
-		showLoadedOnConfirm:true,
-		preConfirm:(login)=>{
-			$("#select-zone-tab").tab("show");
-		},
-		allowOutsideClick:() => !Swal.isLoading(),
 	});
 })
