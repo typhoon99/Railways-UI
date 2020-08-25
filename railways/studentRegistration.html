@@ -51,13 +51,31 @@
                 <div class="navbar-middle">
                     <div class="brands-wrap">
                         <ul class="brands">
-                            <li><a class="navbar-brand aicte-internships" href="index.html"><span class="sr-only">AICTE
-                                        Internships</span></a></li>
-                            <li><a class="navbar-brand aicte" href="#"><span class="sr-only">All India Council for
-                                        Technical Education</span></a></li>
+                            <li>
+                                <a class="navbar-brand aicte-internships" href="index.html">
+                                    <span class="sr-only">
+                                        AICTE
+                                        Internships
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand aicte" href="#">
+                                    <span class="sr-only">
+                                        All India Council for
+                                        Technical Education
+                                    </span>
+                                </a>
+                            </li>
                             <li><a class="navbar-brand mhrd" href="#"><span class="sr-only">MHRD</span></a></li>
-                            <li><a class="navbar-brand goi" href="#"><span class="sr-only">Government of
-                                        India</span></a></li>
+                            <li>
+                                <a class="navbar-brand goi" href="#">
+                                    <span class="sr-only">
+                                        Government of
+                                        India
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +91,8 @@
                     <ul class="header-links">
                         <li class="demo-link"><a href="#" class="btn btn-sm btn-link">Demo</a></li>
                         <li class="team-link"><a href="#" class="btn btn-sm btn-link">Our Team</a></li>
-                        <li class="post-internship-link"><a href="#" class="btn btn-sm btn-link">Post Internship</a>
+                        <li class="post-internship-link">
+                            <a href="#" class="btn btn-sm btn-link">Post Internship</a>
                         </li>
                         <li class="login-link"><a href="#" class="btn btn-sm btn-link">Sign In</a></li>
                         <li><a href="#" class="btn btn-sm btn-primary signup-link">Sign Up</a></li>
@@ -97,8 +116,9 @@
                         <li><span>తెలుగు</span></li>
                     </ul>
 
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#languages-menu"><i
-                            class="fas fa-arrow-circle-up"></i></button>
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#languages-menu">
+                        <i class="fas fa-arrow-circle-up"></i>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -112,9 +132,8 @@
                         </div>
                         <ul class="nav nav-tabs register-tab" id="register-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link register-student active" id="register-student-tab" data-toggle="tab"
-                                    href="#register-student" role="tab" aria-controls="register-student"
-                                    aria-selected="false">
+                                <a class="nav-link form-step1 active" id="form-stem1-tab" data-toggle="tab"
+                                    href="#form-step1" role="tab" aria-controls="form-step1" aria-selected="false">
                                     <i class="fas fa-user-graduate  reg-ico"></i>
 
                                     <span class="reg-heading">
@@ -123,9 +142,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link register-admin" id="register-admin-tab" data-toggle="tab"
-                                    href="#register-admin" role="tab" aria-controls="register-admin"
-                                    aria-selected="false">
+                                <a class="nav-link form-step2" id="form-step2-tab" data-toggle="tab" href="#form-step2"
+                                    role="tab" aria-controls="form-step2" aria-selected="false">
                                     <i class="fas fa-train  reg-ico"></i>
                                     <span class="reg-heading">
                                         Step 2
@@ -133,9 +151,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link register-admin" id="register-tab" data-toggle="tab"
-                                    href="#register-step3" role="tab" aria-controls="register-admin"
-                                    aria-selected="false">
+                                <a class="nav-link form-step3" id="form-step3-tab" data-toggle="tab" href="#form-step3"
+                                    role="tab" aria-controls="form-step3" aria-selected="false">
                                     <i class="fas fa-brain  reg-ico"></i>
                                     <span class="reg-heading">
                                         Step 3
@@ -145,814 +162,1085 @@
                         </ul>
 
                         <div class="tab-content category-tab-content" id="register-tabContent">
-                            <div class="tab-pane active" id="register-student" role="tabpanel"
-                                aria-labelledby="register-student-tab">
-
-                                <section>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="container mt-4">
-                                                <div id="student_form">
-                                                    <form method="post" class="text-center" action="./src/php/main.php">
-                                                        <!-- Name -->
-                                                        <div class="row mb-4">
-                                                            <div class="col">
-                                                                <h3>
-                                                                    If you have already Registered with AICTE Internship
-                                                                    Portal, <a class="text-primary" href="./login.html"
-                                                                        target="_blank">Click Here</a> to
-                                                                    Login.</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-6 ">
-                                                                <input type="radio" class="mx-2" name="organisation1"
-                                                                    id="id1" value="yes" required="">AICTE Affiliated
-                                                                Organisation
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <input type="radio" class="mx-2" value="no"
-                                                                    name="organisation1" id="id2">Non AICTE
-                                                                Affiliated Organisation
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md" id="id3">
-                                                                <label for="fname"
-                                                                    class="float-left"><b>University/College/Institute
-                                                                        Name</b> <b style="color:red">*</b></label>
-                                                                <input type="text" name="my_institute_name"
-                                                                    id="my_institute_name" class="form-control mb-4"
-                                                                    placeholder="University/College/Institute Name"
-                                                                    required="">
-                                                            </div>
-                                                            <div class="col-md" id="id4" style="display:none">
-                                                                <label for="fname"
-                                                                    class="float-left"><b>University/College/Institute
-                                                                        Name</b> <b style="color:red">*</b></label>
-                                                                <input type="text"
-                                                                    onchange="validatespecialstrings1(this)"
-                                                                    id="my_institute_name1" name="my_institute_name1"
-                                                                    class="form-control mb-4"
-                                                                    placeholder="University/College/Institute Name"
-                                                                    required="">
-                                                            </div>
-                                                            <div class="col-md">
-                                                                <label for="lname" class="float-left"><b>Student ID
-                                                                        (Enrolment Number)</b><b
-                                                                        style="color:red">*</b></label>
-                                                                <input type="text" name="student_id"
-                                                                    onchange="function validatestringsandnumber1(this)"
-                                                                    id="student_id" maxlength="14"
-                                                                    class="form-control mb-4"
-                                                                    placeholder="Student ID (Enrolment Number)"
-                                                                    required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md">
-                                                                <label for="fname" class="float-left"><b>First Name</b>
-                                                                    <b style="color:red">*</b></label>
-                                                                <input type="text" name="fname" id="fname"
-                                                                    onchange="validatestrings1(this)"
-                                                                    class="form-control mb-4" placeholder="First Name"
-                                                                    required="">
-                                                            </div>
-                                                            <div class="col-md">
-                                                                <label for="fname" class="float-left"><b>Middle
-                                                                        Name</b></label>
-                                                                <input type="text" name="student_middle_name"
-                                                                    id="student_middle_name"
-                                                                    onchange="validatestrings1(this)"
-                                                                    class="form-control mb-4" placeholder="Middle Name">
-                                                            </div>
-                                                            <div class="col-md">
-                                                                <label for="lname" class="float-left"><b>Last
-                                                                        Name</b></label>
-                                                                <input type="text" name="lname"
-                                                                    onchange="validatestrings1(this)" id="lname"
-                                                                    class="form-control mb-4" placeholder="Last Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md">
-                                                                <label for="state" class="float-left"><b>State/UT</b><b
-                                                                        style="color:red">*</b> </label>
-                                                                <div class="form-group">
-                                                                    <!-- <input type="text" name="state" id="state"onchange="validatestrings(this)" class="form-control mb-4 placeholder="State" required> -->
-                                                                    <select
-                                                                        onchange="print_city('city', this.selectedIndex);"
-                                                                        id="state" name="state" class="form-control"
-                                                                        required="">
-                                                                        <option value="">Select State</option>
-                                                                        <option value="Andaman &amp; Nicobar">Andaman
-                                                                            &amp; Nicobar</option>
-                                                                        <option value="Andhra Pradesh">Andhra Pradesh
-                                                                        </option>
-                                                                        <option value="Arunanchal Pradesh">Arunanchal
-                                                                            Pradesh</option>
-                                                                        <option value="Assam">Assam</option>
-                                                                        <option value="Bihar">Bihar</option>
-                                                                        <option value="Chandigarh">Chandigarh</option>
-                                                                        <option value="Chhattisgarh">Chhattisgarh
-                                                                        </option>
-                                                                        <option value="Dadra Nagar &amp; Haveli">Dadra
-                                                                            Nagar &amp; Haveli</option>
-                                                                        <option value="Daman &amp; Diu">Daman &amp; Diu
-                                                                        </option>
-                                                                        <option value="Delhi">Delhi</option>
-                                                                        <option value="Goa">Goa</option>
-                                                                        <option value="Gujarat">Gujarat</option>
-                                                                        <option value="Haryana">Haryana</option>
-                                                                        <option value="Himachal Pradesh">Himachal
-                                                                            Pradesh</option>
-                                                                        <option value="Jammu &amp; Kashmir">Jammu &amp;
-                                                                            Kashmir</option>
-                                                                        <option value="Jharkhand">Jharkhand</option>
-                                                                        <option value="Karnataka">Karnataka</option>
-                                                                        <option value="Kerala">Kerala</option>
-                                                                        <option value="Lakshadweep">Lakshadweep</option>
-                                                                        <option value="Madhya Pradesh">Madhya Pradesh
-                                                                        </option>
-                                                                        <option value="Maharashtra">Maharashtra</option>
-                                                                        <option value="Manipur">Manipur</option>
-                                                                        <option value="Meghalaya">Meghalaya</option>
-                                                                        <option value="Mizoram">Mizoram</option>
-                                                                        <option value="Nagaland">Nagaland</option>
-                                                                        <option value="Odisha">Odisha</option>
-                                                                        <option value="Puducherry">Puducherry</option>
-                                                                        <option value="Punjab">Punjab</option>
-                                                                        <option value="Rajasthan">Rajasthan</option>
-                                                                        <option value="Sikkim">Sikkim</option>
-                                                                        <option value="Tamil Nadu">Tamil Nadu</option>
-                                                                        <option value="Tripura">Tripura</option>
-                                                                        <option value="Telangana">Telangana</option>
-                                                                        <option value="Uttar Pradesh">Uttar Pradesh
-                                                                        </option>
-                                                                        <option value="Uttarakhand">Uttarakhand</option>
-                                                                        <option value="West Bengal">West Bengal</option>
-                                                                    </select>
-
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md">
-                                                                <label for="city" class="float-left"><b>City</b><b
-                                                                        style="color:red">*</b> </label>
-                                                                <div class="form-group">
-                                                                    <!--  <input type="text" name="city" id="city" class="form-control mb-4" placeholder="City"required> -->
-                                                                    <select id="city" name="city" class="form-control"
-                                                                        required="">
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md">
-                                                                <label for="contactnum" class="float-left"><b>Contact
-                                                                        Number</b><b style="color:red">*</b></label>
-                                                                <input type="text" name="contactnum" id="contactnum"
-                                                                    onchange="phonenumber1(this)"
-                                                                    class="form-control mb-4"
-                                                                    placeholder="Contact Number" required="">
-                                                            </div>
-                                                            <div class="col-md">
-                                                                <div class="form-group">
-                                                                    <label for="email" class="float-left"><b>Email</b><b
-                                                                            style="color:red">*</b></label>
-                                                                    <input type="email" name="email" id="email"
-                                                                        onchange="validateemail(this)"
-                                                                        class="form-control mb-4" placeholder="E-mail"
-                                                                        required="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <!-- Email -->
-                                                                <label for="" class="float-left"><b>Password</b><b
-                                                                        style="color:red">*</b></label>
-                                                                <input type="password" name="password" id="password"
-                                                                    onchange="validatespecialstrings1(this)"
-                                                                    class="form-control mb-4" placeholder="Password">
-                                                                <input type="checkbox" onclick="showpassword()"
-                                                                    size="15" maxlength="20" class="float-left"><span
-                                                                    class="form-group mx-2"
-                                                                    style="float:left;line-height: 0.8;">Show
-                                                                    Password</span>
-                                                            </div>
-                                                            <div class="col">
-                                                                <!-- Email -->
-                                                                <label for="" class="float-left"><b>Confirm
-                                                                        Password</b><b style="color:red">*</b></label>
-                                                                <input type="password" name="c_password" id="c_password"
-                                                                    onchange="verifypassword();"
-                                                                    class="form-control mb-4" placeholder="Password">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md">
-                                                                <label for="contactnum" class="float-left"><b>Select
-                                                                        Security Question</b><b
-                                                                        style="color:red">*</b></label>
-                                                                <select name="security" id="security"
-                                                                    class="form-control">
-                                                                    <option value="What Is the Pet Name">What is your
-                                                                        Pet Name</option>
-                                                                    <option value="What is the first school Name">What
-                                                                        is your first school Name
-                                                                    </option>
-                                                                    <option value="What is your favourite color">What is
-                                                                        your favourite color
-                                                                    </option>
-                                                                    <option value="What is Your favourite Game">What is
-                                                                        your favourite Game</option>
-                                                                    <option value="Who is your favourite Teacher">Who is
-                                                                        your favourite Teacher
-                                                                    </option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-md">
-                                                                <div class="form-group">
-                                                                    <label for="email" class="float-left"><b>Security
-                                                                            Answer</b><b style="color:red">*</b></label>
-                                                                    <input type="password" name="answer" id="answer"
-                                                                        class="form-control mb-4"
-                                                                        placeholder="Security Answer" required="">
-                                                                    <input type="checkbox" onclick="showanswer()"
-                                                                        size="15" maxlength="20"
-                                                                        style="float:left;"><span
-                                                                        class="form-group mx-2"
-                                                                        style="float:left;line-height: 0.8;">Show
-                                                                        answer</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-auto my-2">
-                                                                <div class="form-group">
-                                                                    <div class="g-recaptcha"
-                                                                        data-callback="recaptchaCallback"
-                                                                        data-sitekey="6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT"
-                                                                        required="">
-                                                                        <div style="width: 304px; height: 78px;">
-                                                                            <div><iframe
-                                                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT&amp;co=aHR0cHM6Ly9pbnRlcm5zaGlwLmFpY3RlLWluZGlhLm9yZzo0NDM.&amp;hl=en&amp;v=AFBwIe6h0oOL7MOVu88LHld-&amp;size=normal&amp;cb=tfaf7i8v30ar"
-                                                                                    width="304" height="78"
-                                                                                    role="presentation"
-                                                                                    name="a-7c46h92gpya6"
-                                                                                    frameborder="0" scrolling="no"
-                                                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                                                            </div><textarea id="g-recaptcha-response"
-                                                                                name="g-recaptcha-response"
-                                                                                class="g-recaptcha-response"
-                                                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                                                        </div><iframe style="display: none;"></iframe>
-                                                                    </div>
-                                                                    <span id="captcha_error" class="text-danger"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <center>
-                                                            <!--   <div class="g-recaptcha" data-sitekey="6Lc80fMUAAAAAPKgu09F-bKcpaA-xI4IhyDyloNn" id="grecaptcha"> </div>  <span id="captcha_error" class="text-danger"></span> -->
-
-                                                            <button type="submit" name="student_register"
-                                                                id="student_register" class="btn btn-primary w-50"
-                                                                style="margin-top:10px" disabled="">
-                                                                Register <i
-                                                                    class="ml-2 fas fa-sign-out-alt"></i></button>
-                                                        </center>
-                                                    </form>
+                            <!-- Step 1 -->
+                            <div class="tab-pane active" id="form-step1" role="tabpanel"
+                                aria-labelledby="form-step1-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="container mt-4">
+                                            <form id="form1" method="post" class="text-center"
+                                                action="./src/php/main.php">
+                                                <!-- Name -->
+                                                <div class="row mb-4">
+                                                    <div class="col">
+                                                        <h3>
+                                                            If you have already Registered with AICTE Internship
+                                                            Portal, <a class="text-primary" href="./login.html"
+                                                                target="_blank">Click Here</a> to
+                                                            Login.
+                                                        </h3>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-6 ">
+                                                        <input type="radio" class="mx-2" name="organisation1" id="id1"
+                                                            value="yes" required="">AICTE Affiliated
+                                                        Organisation
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="radio" class="mx-2" value="no" name="organisation1"
+                                                            id="id2">Non AICTE
+                                                        Affiliated Organisation
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md" id="id3">
+                                                        <label for="fname" class="float-left">
+                                                            <b>
+                                                                University/College/Institute
+                                                                Name
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="my_institute_name"
+                                                            id="my_institute_name" class="form-control mb-4"
+                                                            placeholder="University/College/Institute Name" required="">
+                                                    </div>
+                                                    <div class="col-md" id="id4" style="display:none">
+                                                        <label for="fname" class="float-left">
+                                                            <b>
+                                                                University/College/Institute
+                                                                Name
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" onchange="validatespecialstrings1(this)"
+                                                            id="my_institute_name1" name="my_institute_name1"
+                                                            class="form-control mb-4"
+                                                            placeholder="University/College/Institute Name" required="">
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <label for="lname" class="float-left">
+                                                            <b>
+                                                                Student ID
+                                                                (Enrolment Number)
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="student_id"
+                                                            onchange="function validatestringsandnumber1(this)"
+                                                            id="student_id" maxlength="14" class="form-control mb-4"
+                                                            placeholder="Student ID (Enrolment Number)" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md">
+                                                        <label for="fname" class="float-left">
+                                                            <b>First Name</b>
+                                                            <b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="fname" id="fname"
+                                                            onchange="validatestrings1(this)" class="form-control mb-4"
+                                                            placeholder="First Name" required="">
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <label for="fname" class="float-left">
+                                                            <b>
+                                                                Middle
+                                                                Name
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="student_middle_name"
+                                                            id="student_middle_name" onchange="validatestrings1(this)"
+                                                            class="form-control mb-4" placeholder="Middle Name">
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <label for="lname" class="float-left">
+                                                            <b>
+                                                                Last
+                                                                Name
+                                                            </b>
+                                                        </label>
+                                                        <input type="text" name="lname"
+                                                            onchange="validatestrings1(this)" id="lname"
+                                                            class="form-control mb-4" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md">
+                                                        <label for="state" class="float-left"><b>State/UT</b><b
+                                                                style="color:red">*</b> </label>
+                                                        <div class="form-group">
+                                                            <!-- <input type="text" name="state" id="state"onchange="validatestrings(this)" class="form-control mb-4 placeholder="State" required> -->
+                                                            <select onchange="print_city('city', this.selectedIndex);"
+                                                                id="state" name="state" class="form-control"
+                                                                required="">
+                                                                <option value="">Select State</option>
+                                                                <option value="Andaman &amp; Nicobar">
+                                                                    Andaman
+                                                                    &amp; Nicobar
+                                                                </option>
+                                                                <option value="Andhra Pradesh">
+                                                                    Andhra Pradesh
+                                                                </option>
+                                                                <option value="Arunanchal Pradesh">
+                                                                    Arunanchal
+                                                                    Pradesh
+                                                                </option>
+                                                                <option value="Assam">Assam</option>
+                                                                <option value="Bihar">Bihar</option>
+                                                                <option value="Chandigarh">Chandigarh</option>
+                                                                <option value="Chhattisgarh">
+                                                                    Chhattisgarh
+                                                                </option>
+                                                                <option value="Dadra Nagar &amp; Haveli">
+                                                                    Dadra
+                                                                    Nagar &amp; Haveli
+                                                                </option>
+                                                                <option value="Daman &amp; Diu">
+                                                                    Daman &amp; Diu
+                                                                </option>
+                                                                <option value="Delhi">Delhi</option>
+                                                                <option value="Goa">Goa</option>
+                                                                <option value="Gujarat">Gujarat</option>
+                                                                <option value="Haryana">Haryana</option>
+                                                                <option value="Himachal Pradesh">
+                                                                    Himachal
+                                                                    Pradesh
+                                                                </option>
+                                                                <option value="Jammu &amp; Kashmir">
+                                                                    Jammu &amp;
+                                                                    Kashmir
+                                                                </option>
+                                                                <option value="Jharkhand">Jharkhand</option>
+                                                                <option value="Karnataka">Karnataka</option>
+                                                                <option value="Kerala">Kerala</option>
+                                                                <option value="Lakshadweep">Lakshadweep</option>
+                                                                <option value="Madhya Pradesh">
+                                                                    Madhya Pradesh
+                                                                </option>
+                                                                <option value="Maharashtra">Maharashtra</option>
+                                                                <option value="Manipur">Manipur</option>
+                                                                <option value="Meghalaya">Meghalaya</option>
+                                                                <option value="Mizoram">Mizoram</option>
+                                                                <option value="Nagaland">Nagaland</option>
+                                                                <option value="Odisha">Odisha</option>
+                                                                <option value="Puducherry">Puducherry</option>
+                                                                <option value="Punjab">Punjab</option>
+                                                                <option value="Rajasthan">Rajasthan</option>
+                                                                <option value="Sikkim">Sikkim</option>
+                                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                                <option value="Tripura">Tripura</option>
+                                                                <option value="Telangana">Telangana</option>
+                                                                <option value="Uttar Pradesh">
+                                                                    Uttar Pradesh
+                                                                </option>
+                                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                                <option value="West Bengal">West Bengal</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md">
+                                                        <label for="city" class="float-left"><b>City</b><b
+                                                                style="color:red">*</b> </label>
+                                                        <div class="form-group">
+                                                            <!--  <input type="text" name="city" id="city" class="form-control mb-4" placeholder="City"required> -->
+                                                            <select id="city" name="city" class="form-control"
+                                                                required=""></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md">
+                                                        <label for="contactnum" class="float-left">
+                                                            <b>
+                                                                Contact
+                                                                Number
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="contactnum" id="contactnum"
+                                                            onchange="phonenumber1(this)" class="form-control mb-4"
+                                                            placeholder="Contact Number" required="">
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="email" class="float-left"><b>Email</b><b
+                                                                    style="color:red">*</b></label>
+                                                            <input type="email" name="email" id="email"
+                                                                onchange="validateemail(this)" class="form-control mb-4"
+                                                                placeholder="E-mail" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <!-- Email -->
+                                                        <label for="" class="float-left"><b>Password</b><b
+                                                                style="color:red">*</b></label>
+                                                        <input type="password" name="password" id="password"
+                                                            onchange="validatespecialstrings1(this)"
+                                                            class="form-control mb-4" placeholder="Password">
+                                                        <input type="checkbox" onclick="showpassword()" size="15"
+                                                            maxlength="20" class="float-left"><span
+                                                            class="form-group mx-2"
+                                                            style="float:left;line-height: 0.8;">
+                                                            Show
+                                                            Password
+                                                        </span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <!-- Email -->
+                                                        <label for="" class="float-left">
+                                                            <b>
+                                                                Confirm
+                                                                Password
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="password" name="c_password" id="c_password"
+                                                            onchange="verifypassword();" class="form-control mb-4"
+                                                            placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md">
+                                                        <label for="contactnum" class="float-left">
+                                                            <b>
+                                                                Select
+                                                                Security Question
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <select name="security" id="security" class="form-control">
+                                                            <option value="What Is the Pet Name">
+                                                                What is your
+                                                                Pet Name
+                                                            </option>
+                                                            <option value="What is the first school Name">
+                                                                What
+                                                                is your first school Name
+                                                            </option>
+                                                            <option value="What is your favourite color">
+                                                                What is
+                                                                your favourite color
+                                                            </option>
+                                                            <option value="What is Your favourite Game">
+                                                                What is
+                                                                your favourite Game
+                                                            </option>
+                                                            <option value="Who is your favourite Teacher">
+                                                                Who is
+                                                                your favourite Teacher
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="email" class="float-left">
+                                                                <b>
+                                                                    Security
+                                                                    Answer
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <input type="password" name="answer" id="answer"
+                                                                class="form-control mb-4" placeholder="Security Answer"
+                                                                required="">
+                                                            <input type="checkbox" onclick="showanswer()" size="15"
+                                                                maxlength="20" style="float:left;"><span
+                                                                class="form-group mx-2"
+                                                                style="float:left;line-height: 0.8;">
+                                                                Show
+                                                                answer
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-auto my-2">
+                                                        <div class="form-group">
+                                                            <div class="g-recaptcha" data-callback="recaptchaCallback"
+                                                                data-sitekey="6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT"
+                                                                required="">
+                                                                <div style="width: 304px; height: 78px;">
+                                                                    <div>
+                                                                        <iframe
+                                                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcKWPUUAAAAAGL492jgqtBtKb_ShabURt7-nzOT&amp;co=aHR0cHM6Ly9pbnRlcm5zaGlwLmFpY3RlLWluZGlhLm9yZzo0NDM.&amp;hl=en&amp;v=AFBwIe6h0oOL7MOVu88LHld-&amp;size=normal&amp;cb=tfaf7i8v30ar"
+                                                                            width="304" height="78" role="presentation"
+                                                                            name="a-7c46h92gpya6" frameborder="0"
+                                                                            scrolling="no"
+                                                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                                    </div><textarea id="g-recaptcha-response"
+                                                                        name="g-recaptcha-response"
+                                                                        class="g-recaptcha-response"
+                                                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                                </div><iframe style="display: none;"></iframe>
+                                                            </div>
+                                                            <span id="captcha_error" class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <!--   <div class="g-recaptcha" data-sitekey="6Lc80fMUAAAAAPKgu09F-bKcpaA-xI4IhyDyloNn" id="grecaptcha"> </div>  <span id="captcha_error" class="text-danger"></span> -->
+
+                                                    <button type="submit" name="student_register" id="student_register"
+                                                        class="btn btn-primary w-50" style="margin-top:10px"
+                                                        disabled="">
+                                                        Register <i class="ml-2 fas fa-sign-out-alt"></i>
+                                                    </button>
+                                                </center>
+                                            </form>
                                         </div>
                                     </div>
-                                </section>
-
+                                </div>
                             </div>
-
-                            <div class="tab-pane" id="register-admin" role="tabpanel"
-                                aria-labelledby="register-admin-tab" <section class="mt-5">
+                            <!-- /Step1 -->
+                            <!-- Step 2 -->
+                            <div class="tab-pane" id="form-step2" role="tabpanel" aria-labelledby="form-step2-tab">
                                 <div class="container">
-
-                                    <div id="coporate_form">
-                                        <form action="" method="post" id="reg-form">
-
-                                            <div class="row mt-3 ">
-                                                <div class="col-md-4 col-4  offset-md-8">
-
-                                                    <img class="img" id="profile-img" height="200px" width="180"
-                                                        src="/images/railways/upload-placeholder.png"
-                                                        alt="your image" />
+                                    <div class="row">
+                                        <div class="container mt-4">
+                                            <form id="form2" class="text-center">
+                                                <div class="row mt-3 ">
+                                                    <div class="col-md-4 col-4  offset-md-8">
+                                                        <img class="img" id="profile-img" height="200px" width="180"
+                                                            src="/images/railways/upload-placeholder.png"
+                                                            alt="your image">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mt-3">
-                                                <div class="col-md-4 col-8  offset-md-8">
-
-                                                    <input type='file' id="image-file" onchange="readURL(this); " />
-                                                </div>
-                                            </div>
-
-                                            <div class="row  justify-content-center align-items-center mt-5 d-none">
-                                                <div class="col-md-6">
-                                                    <label for="user-name">Name of the candidate (in block
-                                                        letters.
-                                                        Leave a space
-                                                        between
-                                                        first name, middle name and surname)</label>
-                                                    <input type="text" name="user-name" class="form-control"
-                                                        id="user-name">
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9">
-                                                    <label for="corr-address">Correspondence Address(in Block
-                                                        letters)</label>
-                                                    <textarea id="corr-address" class="form-control"
-                                                        rows="3"></textarea>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-4 col-8 form-group offset-md-8">
+                                                        <label for="image-file">
+                                                            <b>
+                                                                Upload an image less than 2MB
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input class="float-right" type="file" id="image-file"
+                                                            onchange="readURL(this); ">
+                                                    </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="row justify-content-center align-items-center mt-3">
+                                                <div class="row mt-3">
+                                                    <div class="col-md-6">
+                                                        <label for="txtCorrespondenceAddress" class="float-left">
+                                                            <b>Correspondence Address</b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="txtCorrespondenceAddress" class="form-control"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txtPermanentAddress" class="float-left">
+                                                            <b>
+                                                                Permanent Address
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="txtPermanentAddress" class="form-control"
+                                                            rows="3"></textarea>
 
-                                                <div class="col-md-3">
-                                                    <label for="corr-telno">Telephone NO.</label>
-                                                    <input type="number" name="corr-telno" class="form-control"
-                                                        id="corr-telno">
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label for="corr-faxno">Fax NO.</label>
-                                                    <input type="number" name="corr-faxno" class="form-control"
-                                                        id="corr-faxno">
+                                                <div class="row my-3">
+                                                    <div class="col-12">
+                                                        <div class="form-check float-left">
+                                                            <input class="form-check-input " type="checkbox" value=""
+                                                                id="chkAddress">
+                                                            <label class="form-check-label" for="chkAddress">
+                                                                <b>
+                                                                    Permanent Address same as Correspondence Address.
+                                                                </b>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label for="corr-mobno">Mobile NO.</label>
-                                                    <input type="number" name="corr-mobno" class="form-control"
-                                                        id="corr-mobno">
-
-
-                                                </div>
-
-                                            </div>
-
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9">
-                                                    <label for="per-address">Permanent Address(in Block
-                                                        letters)</label>
-                                                    <textarea id="per-address" class="form-control" rows="3"></textarea>
-
-
-
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center align-items-center mt-3">
-
-                                                <div class="col-md-3">
-                                                    <label for="corr-telno">Telephone NO.</label>
-                                                    <input type="number" name="corr-telno" class="form-control"
-                                                        id="corr-telno">
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label for="corr-faxno">Fax NO.</label>
-                                                    <input type="number" name="corr-faxno" class="form-control"
-                                                        id="corr-faxno">
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label for="corr-mobno">Mobile NO.</label>
-                                                    <input type="number" name="corr-mobno" class="form-control"
-                                                        id="corr-mobno">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label for="txtCorrespondenceMobile" class="float-left">
+                                                            <b>
+                                                                Mobile No.
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="number" name="txtCorrespondenceMobile"
+                                                            class="form-control" id="txtCorrespondenceMobile">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txtPermanentMobile" class="float-left">
+                                                            <b>
+                                                                Mobile No.
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="number" name="txtPermanentMobile"
+                                                            class="form-control" id="txtPermanentMobile">
+                                                    </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-4 ">
-                                                    <label for="dob">Date of Birth</label>
-                                                    <input type="date" width="25%" name="dob" class="form-control"
-                                                        id="dob">
-                                                </div>
-                                                <div class="col-md-4 offset-md-1">
-                                                    <label for="gender"> Gender:</label>
-                                                    <div class="form-check">
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6 ">
+                                                        <label for="txtDOB" class="float-left">
+                                                            <b>
+                                                                Date of Birth
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="date" width="25%" name="txtDOB"
+                                                            class="form-control" id="txtDOB">
+                                                    </div>
+                                                    <div class="col-md-6 ">
+                                                        <div class="form-group">
+                                                            <label for="radioGender" class="text-left">
+                                                                <b>
+                                                                    Gender
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <div class="form-check">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio"
+                                                                            name="radioGender" id="male" value="male">
+                                                                        <label class="form-check-label" for="male">
+                                                                            <b>Male</b>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio"
+                                                                            name="radioGender" id="female"
+                                                                            value="female">
+                                                                        <label class="form-check-label" for="female">
+                                                                            <b>Female</b>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio"
+                                                                            name="radioGender" id="others"
+                                                                            value="female">
+                                                                        <label class="form-check-label" for="others">
+                                                                            <b>
+                                                                                Others
+                                                                            </b>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
 
-                                                        <div class="row">
-                                                            <div class="col-3">
-                                                                <input class="form-check-input " type="radio"
-                                                                    name="gender" id="gen-male" value="male">
-                                                                <label class="form-check-label"
-                                                                    for="gen-male">Male</label>
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input class="form-check-input " type="radio"
-                                                                    name="gender" id="gen-female" value="female">
-                                                                <label class="form-check-label"
-                                                                    for="gen-female">Female</label>
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input class="form-check-input " type="radio"
-                                                                    name="gender" id="gen-p" value="female">
-                                                                <label class="form-check-label"
-                                                                    for="gen-others">Others</label>
                                                             </div>
                                                         </div>
 
                                                     </div>
-
                                                 </div>
-
-                                            </div>
-
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9">
-                                                    <label for="user-name">Educational Qualification(s) (Highest
-                                                        to be
-                                                        mentioned
-                                                        first)</label>
-                                                </div>
-                                            </div>
-                                            <div id="no-more-tables"
-                                                class="row justify-content-center align-items-center mt-3">
-                                                <table class="col-md-9 table-bordered table-striped table-condensed cf">
-
-                                                    <thead class="cf">
-                                                        <tr>
-                                                            <th>Sr. No.</th>
-                                                            <th>Degree/Qualification acquired</th>
-                                                            <th>Name of college/school/institution</th>
-                                                            <th>Univ./Board</th>
-                                                            <th>Marks Obtained (% age)</th>
-                                                            <th>Year</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td data-title="Sr. No.">
-                                                                <h5>10th</h4>
-                                                            </td>
-                                                            <td data-title="Qualification acquired"><input type="text"
-                                                                    name="quali-aqu1" class="form-control inpt"
-                                                                    id="quali-aqu1">
-                                                            </td>
-                                                            <td data-title="Name of institution"><input type="text"
-                                                                    name="coll-name1" class="form-control inpt"
-                                                                    id="coll-name1">
-                                                            </td>
-                                                            <td data-title="Univ./Board"> <input type="text"
-                                                                    name="univ-board1" class="form-control inpt"
-                                                                    id="univ-board1"></td>
-                                                            <td data-title="Marks Obtained(%age)"><input type="number"
-                                                                    name="marks1" class="form-control inpt" id="marks1">
-                                                            </td>
-                                                            <td data-title="Year"> <input type="number" name="year1"
-                                                                    class="form-control inpt" id="year1"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td data-title="Sr. No.">
-                                                                <h5>12th / Diploma</h5>
-                                                            </td>
-                                                            <td data-title="Qualification acquired"><input type="text"
-                                                                    name="quali-aqu2" class="form-control inpt"
-                                                                    id="quali-aqu2">
-                                                            </td>
-                                                            <td data-title="Name of institution"><input type="text"
-                                                                    name="coll-name2" class="form-control inpt"
-                                                                    id="coll-name2">
-                                                            </td>
-                                                            <td data-title="Univ./Board"> <input type="text"
-                                                                    name="univ-board2" class="form-control inpt"
-                                                                    id="univ-board2"></td>
-                                                            <td data-title="Marks Obtained(%age)"><input type="number"
-                                                                    name="marks2" class="form-control inpt" id="marks2">
-                                                            </td>
-                                                            <td data-title="Year"> <input type="number" name="year2"
-                                                                    class="form-control inpt" id="year2"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td data-title="Sr. No.">
-                                                                <h5>Degree</h5>
-                                                            </td>
-                                                            <td data-title="Qualification acquired"><input type="text"
-                                                                    name="quali-aqu3" class="form-control inpt"
-                                                                    id="quali-aqu3">
-                                                            </td>
-                                                            <td data-title="Name ofinstitution"><input type="text"
-                                                                    name="coll-name3" class="form-control inpt"
-                                                                    id="coll-name3">
-                                                            </td>
-                                                            <td data-title="Univ./Board"> <input type="text"
-                                                                    name="univ-board3" class="form-control inpt"
-                                                                    id="univ-board3"></td>
-                                                            <td data-title="Marks Obtained(%age)"><input type="number"
-                                                                    name="marks3" class="form-control inpt" id="marks3">
-                                                            </td>
-                                                            <td data-title="Year"> <input type="number" name="year3"
-                                                                    class="form-control inpt" id="year3"></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Sr. No.">
-                                                                <h5>Master / PhD</h5>
-                                                            </td>
-                                                            <td data-title="Qualification acquired"><input type="text"
-                                                                    name="quali-aqu3" class="form-control inpt"
-                                                                    id="quali-aqu3">
-                                                            </td>
-                                                            <td data-title="Name ofinstitution"><input type="text"
-                                                                    name="coll-name3" class="form-control inpt"
-                                                                    id="coll-name3">
-                                                            </td>
-                                                            <td data-title="Univ./Board"> <input type="text"
-                                                                    name="univ-board3" class="form-control inpt"
-                                                                    id="univ-board3"></td>
-                                                            <td data-title="Marks Obtained(%age)"><input type="number"
-                                                                    name="marks3" class="form-control inpt" id="marks3">
-                                                            </td>
-                                                            <td data-title="Year"> <input type="number" name="year3"
-                                                                    class="form-control inpt" id="year3"></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9">
-                                                    <div>
-                                                        <label for="project-det"> Details of projects
-                                                            undertaken,if any
-                                                            :</label>
-                                                        <textarea id="project-det" class="form-control mt-1"
-                                                            rows="3"></textarea>
-                                                    </div>
-                                                    <div>
-                                                        <label for="present-stat">Present Status of Projects
-                                                            (Completed,
-                                                            Ongoing etc.)</label>
-                                                        <textarea id="present-stat" class="form-control mt-1"
-                                                            rows="3"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9  ">
-                                                    <label for="dis-int">Discipline(s) in which internship is
-                                                        sought</label>
-                                                    <textarea id="dis-int" class="form-control mt-1"
-                                                        rows="3"></textarea>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9  ">
-                                                    <label for="rel-info">Any other relevant
-                                                        information:</label>
-                                                    <input type="number" name="rel-info" class="form-control"
-                                                        id="rel-info">
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center align-items-center mt-5">
-                                                <div class="col-md-9  ">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value=""
-                                                            id="cer-script">
-                                                        <label class="form-check-label" for="cer-script">
-                                                            I certify that the information furnished above is
-                                                            true to
-                                                            the best of my
-                                                            knowledge and belief.
+                                                <div class="row mt-5">
+                                                    <div class="col-md-12">
+                                                        <label for="user-name" class="float-left">
+                                                            <b>
+                                                                Educational Qualification(s) (Highest to be mentioned
+                                                                first)
+                                                            </b><b style="color:red">*</b>
                                                         </label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
+
+                                                <!-- Div Table Row  -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">10th</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">12th / Diploma</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                    id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">Degree</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                                                                        id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">Masters / PhD</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                                                                        id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1"
+                                                                    class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <!-- Div Table Row  -->
+                                                    <div class="row mt-5">
+                                                        <div class="col-md-6">
+                                                            <label for="project-det" class="float-left">
+                                                                <b>
+                                                                    Details of projects undertaken,if any
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <textarea id="project-det" class="form-control mt-1"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="present-stat" class="float-left">
+                                                                <b>
+                                                                    Present Status of Projects (Completed, Ongoing etc.)
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <textarea id="present-stat" class="form-control mt-1"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-5">
+                                                        <div class="col-md-6">
+                                                            <label for="dis-int" class="float-left">
+                                                                <b>
+                                                                    Discipline(s) in which internship is sought
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <textarea id="dis-int" class="form-control mt-1"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="rel-info" class="float-left ">
+                                                                <b>
+                                                                    Any other relevant
+                                                                    information
+                                                                </b> <b style="color:red">*</b>
+                                                            </label>
+                                                            <textarea name="rel-info" class="form-control" id="rel-info"
+                                                                rows="3"> </textarea>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row mt-5">
+                                                        <div class="col-md-12">
+                                                            <div class="form-check ">
+                                                                <input class="form-check-input " type="checkbox"
+                                                                    value="" id="certificate-script">
+                                                                <label class="form-check-label"
+                                                                    for="certificate-script">
+                                                                    I certify that the information furnished above is
+                                                                    true to
+                                                                    the best of my
+                                                                    knowledge and belief.
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <center>
+                                                        <button type="submit" id="tab-basic-info"
+                                                            class="btn btn-primary w-50 my-3">
+                                                            Next <i class="ml-2 fas fa-sign-out-alt"></i></button>
+                                                    </center>
+
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                                <center>
-                                    <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
-                                        Next <i class="ml-2 fas fa-sign-out-alt"></i></button>
-                                </center>
-                                </section>
                             </div>
+                            <!-- /Step2 -->
+                            <!-- Step 3 -->
+                            <div class="tab-pane" id="form-step3" role="tabpanel" aria-labelledby="form-step3-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="container mt-4">
+                                            <form id="form3" class="text-center">
+                                                <div class="row justify-content-center p-2 ">
+                                                    <div class="d-block">
+                                                        <h3 class="px-4">
+                                                            Please fill in the below data to get an
+                                                            opportunity
+                                                            with Indian Railways.
+                                                        </h3>
+                                                        <h3 class="pt-2 pb-2 text-center">Help us know you better!</h3>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row m-2 p-2 justify-content-center">
+                                                    <div class="col-md-5" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Government ID
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <select id="selectGovtId" type="text" class="form-control">
+                                                                <option value="aadhar">Aadhar</option>
+                                                                <option value="passport">Passport</option>
+                                                                <option value="pan">Pan</option>
+                                                                <option value="license">Driving License</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Number
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <input id="txtGovtId" type="text" class="form-control"
+                                                                placeholder="8468635454">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row m-2 p-2 justify-content-center">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Skills (eg: Python,
+                                                                Matlab)
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Languages Known (eg:
+                                                                English, Hindi, Marathi)
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="row m-2 p-2">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Internship
+                                                                Experience
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Extra Curricular
+                                                                Activities
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="row m-2 p-2">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Certifications
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Career Interests
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="row m-2 p-2">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Technical Events
+                                                            </b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Published Research
+                                                            </b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <textarea id="txtName" type="text" class="form-control"
+                                                                placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row justify-content-center">
+                                                    <div class="d-block">
+                                                        <h4>
+                                                            Preferred Work locations for other Internship Opportunities
+                                                            (College,
+                                                            Home, Favourite Work Location)
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-2 p-2 justify-content-center">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Priority 1
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <input id="txtName" type="text" class="form-control"
+                                                                placeholder="Mumbai">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Priority 2
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <input id="txtName" type="text" class="form-control"
+                                                                placeholder="Delhi">
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                            <div class="tab-pane" id="register-step3" role="tabpanel"
-                                aria-labelledby="register-employer-tab">
-                                <section class="mt-5">
-                                    <div id="coporate_form" class="container mt-4">
-                                        <div class="row justify-content-center p-2 ">
-                                            <div class="d-block">
-                                                <h3 class="px-4">Please fill in the below data to get an
-                                                    opportunity
-                                                    with Indian Railways.</h3>
-                                                <h3 class="pt-2 pb-2 text-center">Help us know you better!</h3>
-                                            </div>
+                                                <div class="row m-2 p-2 justify-content-center">
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Priority 3
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <input id="txtName" type="text" class="form-control"
+                                                                placeholder="Kolkata">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" id="id3">
+                                                        <label for="txtName" class="float-left ">
+                                                            <b>
+                                                                Priority 4
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <div class="input-group input-with-actions">
+                                                            <input id="txtName" type="text" class="form-control"
+                                                                placeholder="Chennai">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <button type="submit" id="tab-basic-info"
+                                                        class="btn btn-primary w-50 my-3">
+                                                        Submit <i class="ml-2 fas fa-sign-out-alt"></i>
+                                                    </button>
+                                                </center>
+                                            </form>
                                         </div>
-                                        <hr>
-                                        <div class="row m-2 p-2 justify-content-center">
-                                            <div class="col-md-5" id="id3">
-                                                <label for="txtName" class="float-left "><b>Government ID
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <select id="selectGovtId" type="text" class="form-control">
-                                                        <option value="aadhar">Aadhar</option>
-                                                        <option value="passport">Passport</option>
-                                                        <option value="pan">Pan</option>
-                                                        <option value="license">Driving License</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7" id="id3">
-                                                <label for="txtName" class="float-left "><b>Number
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <input id="txtGovtId" type="text" class="form-control"
-                                                        placeholder="8468635454">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row m-2 p-2 justify-content-center">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Skills (eg: Python,
-                                                        Matlab)
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Languages Known (eg:
-                                                        English, Hindi, Marathi)
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row m-2 p-2">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Internship
-                                                        Experience
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Extra Curricular
-                                                        Activities
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row m-2 p-2">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Certifications
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Career Interests
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row m-2 p-2">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Technical Events
-                                                    </b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Published Research
-                                                    </b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <textarea id="txtName" type="text" class="form-control"
-                                                        placeholder=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row justify-content-center">
-                                            <div class="d-block">
-                                                <h4>Preferred Work locations for other Internship Opportunities
-                                                    (College,
-                                                    Home, Favourite Work Location)</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row m-2 p-2 justify-content-center">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Priority 1
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <input id="txtName" type="text" class="form-control"
-                                                        placeholder="Mumbai">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Priority 2
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <input id="txtName" type="text" class="form-control"
-                                                        placeholder="Delhi">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row m-2 p-2 justify-content-center">
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Priority 3
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <input id="txtName" type="text" class="form-control"
-                                                        placeholder="Kolkata">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" id="id3">
-                                                <label for="txtName" class="float-left "><b>Priority 4
-                                                    </b> <b style="color:red">*</b>
-                                                </label>
-                                                <div class="input-group input-with-actions">
-                                                    <input id="txtName" type="text" class="form-control"
-                                                        placeholder="Chennai">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <center>
-                                            <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
-                                                Submit <i class="ml-2 fas fa-sign-out-alt"></i></button>
-                                        </center>
                                     </div>
-                                </section>
-                            </div>
-                        </div>
-                        </form>
-                    </div>
-
-                    <div class="subscription-section">
-                        <div class="section-content order-lg-1">
-                            <h3>Key Announcements For Students</h3>
-                            <ul class="student-announcements">
-                                <li>Internships for students & fresh engineers</li>
-                                <li>From job seekers to job creators</li>
-                                <li>Rs 99,300 crore for Education sector in 2020-21 Apprenticeship embedded
-                                    courses</li>
-                                <li>Online education programmes for students Financing Education Sector [FDI,
-                                    External
-                                    commercial borrowing]</li>
-                            </ul>
-
-                            <h3>Subscribe to our newsletter</h3>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="student@yourcollege.com"
-                                    aria-label="student@yourcollege.com" aria-describedby="subscribe">
-                                <div class="input-group-append">
-                                    <button class="btn btn-secondary">Subscribe <i
-                                            class="fas fa-arrow-right"></i></button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="img-wrap order-lg-0">
-                            <img src="/images/modiji.127ecbfe37036defa16c9b7bfcb44ac1.png" alt="">
-                        </div>
-                    </div>
+                            <!-- /Step3 -->
 
+                        </div>
+                        <div class="subscription-section mt-4">
+                            <div class="section-content order-lg-1">
+                                <h3>Key Announcements For Students</h3>
+                                <ul class="student-announcements">
+                                    <li>Internships for students & fresh engineers</li>
+                                    <li>From job seekers to job creators</li>
+                                    <li>
+                                        Rs 99,300 crore for Education sector in 2020-21 Apprenticeship embedded
+                                        courses
+                                    </li>
+                                    <li>
+                                        Online education programmes for students Financing Education Sector [FDI,
+                                        External
+                                        commercial borrowing]
+                                    </li>
+                                </ul>
+
+                                <h3>Subscribe to our newsletter</h3>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="student@yourcollege.com"
+                                        aria-label="student@yourcollege.com" aria-describedby="subscribe">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary">
+                                            Subscribe <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-wrap order-lg-0">
+                                <img src="/images/modiji.127ecbfe37036defa16c9b7bfcb44ac1.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -1005,12 +1293,21 @@
 
                 <div class="section social">
                     <ul>
-                        <li><a href="#" class=""><i class="fab fa-facebook fa-3x"></i><span
-                                    class="sr-only">facebook</span></a></li>
-                        <li><a href="#" class=""><i class="fab fa-twitter fa-3x"></i><span
-                                    class="sr-only">twitter</span></a></li>
-                        <li><a href="#" class=""><i class="fab fa-instagram fa-3x"></i><span
-                                    class="sr-only">instagram</span></a></li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-facebook fa-3x"></i><span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-twitter fa-3x"></i><span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-instagram fa-3x"></i><span class="sr-only">instagram</span>
+                            </a>
+                        </li>
                     </ul>
                     <p class="credit">Made with &#9829; in India | From Students to Students</p>
                 </div>
