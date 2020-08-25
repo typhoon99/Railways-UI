@@ -4,6 +4,11 @@ textarea {
             resize: none;
         }
 
+
+.year-width{
+    width: 3rem;
+}
+
         .inpt {
             /* border-color: white; */
         }
@@ -73,6 +78,19 @@ Label the data
             }
         }
 
+        .table-bordered, .table-bordered td, .table-bordered th {
+            border: 1px solid #ffffff;
+        }
+        
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #ffffff;
+        }
+        
         .table-striped tbody tr:nth-of-type(even) {
-            background-color: rgba(0, 0, 0, .05);
+            background-color: #ffffff;
+        }
+        
+        @media only screen and (max-width: 800px){
+        #no-more-tables td {
+            border-bottom: 1px solid #ffffff;
         }
