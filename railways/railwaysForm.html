@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <title>AICTE Internship Enterprise Portal - Learning by doing. 1 Crore Internships by 2025</title>
-    <meta name="description" content="" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <link rel="shortcut icon" href="/images/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -30,84 +28,8 @@
     <meta name="apple-mobile-web-app-title" content="AICTE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="/style.1c48d001a3f8a2fd1816.css" rel="stylesheet">
-    <style>
-        textarea {
-            resize: none;
-        }
-
-        .inpt {
-            /* border-color: white; */
-        }
-
-        .img {
-            width: 180px;
-            max-height: 200px;
-            border: 1px solid grey;
-        }
-
-        label {
-            font-weight: 640;
-        }
-
-        @media only screen and (max-width: 800px) {
-
-            /* Force table to not be like tables anymore */
-            #no-more-tables table,
-            #no-more-tables thead,
-            #no-more-tables tbody,
-            #no-more-tables th,
-            #no-more-tables td,
-            #no-more-tables tr {
-                display: block;
-            }
-
-            /* Hide table headers (but not display: none;, for accessibility) */
-            #no-more-tables thead tr {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
-            }
-
-            #no-more-tables tr {
-                border: 1px solid #ccc;
-            }
-
-            #no-more-tables td {
-                /* Behave like a "row" */
-                border: none;
-                border-bottom: 1px solid #eee;
-                position: relative;
-                padding-left: 50%;
-                white-space: normal;
-                text-align: left;
-            }
-
-            #no-more-tables td:before {
-                /* Now like a table header */
-                position: absolute;
-                /* Top/left values mimic padding */
-                top: 6px;
-                left: 6px;
-                width: 45%;
-                padding-right: 10px;
-                white-space: nowrap;
-                text-align: left;
-                font-weight: bold;
-            }
-
-            /*
-Label the data
-*/
-            #no-more-tables td:before {
-                content: attr(data-title);
-
-            }
-        }
-
-        .table-striped tbody tr:nth-of-type(even) {
-            background-color: rgba(0, 0, 0, .05);
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./railways.css">
 </head>
 
 <body>
@@ -116,8 +38,7 @@ Label the data
         <header class="home-page">
             <nav class="navbar navbar-light">
                 <div class="navbar-left">
-                    <button type="button" class="btn navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#languages-menu">
+                    <button type="button" class="btn navbar-toggle collapsed" data-toggle="collapse" data-target="#languages-menu">
                         <span class="sr-only">Switch language</span>
                         <img src="/images/icon-translate.5d54eb12502dfba5f0d87ee2290693cd.png" alt="Translate">
                     </button>
@@ -125,19 +46,36 @@ Label the data
                 <div class="navbar-middle">
                     <div class="brands-wrap">
                         <ul class="brands">
-                            <li><a class="navbar-brand aicte-internships" href="index.html"><span class="sr-only">AICTE
-                                        Internships</span></a></li>
-                            <li><a class="navbar-brand aicte" href="#"><span class="sr-only">All India Council for
-                                        Technical Education</span></a></li>
+                            <li>
+                                <a class="navbar-brand aicte-internships" href="index.html">
+                                    <span class="sr-only">
+                                        AICTE
+                                        Internships
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand aicte" href="#">
+                                    <span class="sr-only">
+                                        All India Council for
+                                        Technical Education
+                                    </span>
+                                </a>
+                            </li>
                             <li><a class="navbar-brand mhrd" href="#"><span class="sr-only">MHRD</span></a></li>
-                            <li><a class="navbar-brand goi" href="#"><span class="sr-only">Government of
-                                        India</span></a></li>
+                            <li>
+                                <a class="navbar-brand goi" href="#">
+                                    <span class="sr-only">
+                                        Government of
+                                        India
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="navbar-right">
-                    <button type="button" id="mainMenuToggle" class="btn btn-outline-medium navbar-toggle collapsed"
-                        data-toggle="collapse" data-target="#main-menu">
+                    <button type="button" id="mainMenuToggle" class="btn btn-outline-medium navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fas fa-bars"></i>
                     </button>
@@ -147,7 +85,8 @@ Label the data
                     <ul class="header-links">
                         <li class="demo-link"><a href="#" class="btn btn-sm btn-link">Demo</a></li>
                         <li class="team-link"><a href="#" class="btn btn-sm btn-link">Our Team</a></li>
-                        <li class="post-internship-link"><a href="#" class="btn btn-sm btn-link">Post Internship</a>
+                        <li class="post-internship-link">
+                            <a href="#" class="btn btn-sm btn-link">Post Internship</a>
                         </li>
                         <li class="login-link"><a href="#" class="btn btn-sm btn-link">Sign In</a></li>
                         <li><a href="#" class="btn btn-sm btn-primary signup-link">Sign Up</a></li>
@@ -171,324 +110,515 @@ Label the data
                         <li><span>తెలుగు</span></li>
                     </ul>
 
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#languages-menu"><i
-                            class="fas fa-arrow-circle-up"></i></button>
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#languages-menu">
+                        <i class="fas fa-arrow-circle-up"></i>
+                    </button>
                 </div>
             </nav>
         </header>
 
-        <div class="main-container">
+        <div class="main-container mt-4 pt-4">
             <div class="row">
                 <div class="col">
-                    <div class="container mb-5  pb-5 mt-5 justify-content-center align-items-center">
-                        <h3 class="text-center"> Application for Online Summer Internship Program, 2020</h3>
-                        <h3 class="mt-5 text-center">GOVERNMENT OF INDIA</h3>
-                        <h3 class="text-center">MINISTRY OF RAILWAYS</h3>
-                        <h3 class="text-center">(RAILWAYS BOARD)</h3>
-                        <form action="" method="post" id="reg-form">
+                    <div class="register-section">
+                        <div class="section-caption">
+                            <h2>Student Application</h2>
+                        </div>
+                        
 
-                            <div class="row mt-3 ">
-                                <div class="col-md-4 col-4  offset-md-8">
-
-                                    <img class="img" id="profile-img" src="/images/railways/upload-placeholder.png" alt="your image" />
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-4 col-8  offset-md-8">
-
-                                    <input type='file' onchange="readURL(this); " />
-                                </div>
-                            </div>
-
-                            <div class="row  justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <label for="user-name">Name of the candidate (in block letters. Leave a space
-                                        between
-                                        first name, middle name and surname)</label>
-                                    <input type="text" name="user-name" class="form-control" id="user-name">
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <label for="corr-address">Correspondence Address(in Block letters)</label>
-                                    <textarea id="corr-address" class="form-control" rows="3"></textarea>
-                                </div>
-
-                            </div>
-                            <div class="row justify-content-center align-items-center mt-3">
-
-                                <div class="col-md-3">
-                                    <label for="corr-telno">Telephone NO.</label>
-                                    <input type="number" name="corr-telno" class="form-control" id="corr-telno">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="corr-faxno">Fax NO.</label>
-                                    <input type="number" name="corr-faxno" class="form-control" id="corr-faxno">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="corr-mobno">Mobile NO.</label>
-                                    <input type="number" name="corr-mobno" class="form-control" id="corr-mobno">
-
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <label for="per-address">Permanent Address(in Block letters)</label>
-                                    <textarea id="per-address" class="form-control" rows="3"></textarea>
-
-
-
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-3">
-
-                                <div class="col-md-3">
-                                    <label for="corr-telno">Telephone NO.</label>
-                                    <input type="number" name="corr-telno" class="form-control" id="corr-telno">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="corr-faxno">Fax NO.</label>
-                                    <input type="number" name="corr-faxno" class="form-control" id="corr-faxno">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="corr-mobno">Mobile NO.</label>
-                                    <input type="number" name="corr-mobno" class="form-control" id="corr-mobno">
-                                </div>
-
-                            </div>
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-4 ">
-                                    <label for="dob">Date of Birth</label>
-                                    <input type="date" width="25%" name="dob" class="form-control" id="dob">
-                                </div>
-                                <div class="col-md-4 offset-md-1">
-                                    <label for="gender"> Gender:</label>
-                                    <div class="form-check">
-
-                                        <div class="row">
-                                            <div class="col-3">
-
-                                                <input class="form-check-input " type="radio" name="gender"
-                                                    id="gen-male" value="male">
-                                                <label class="form-check-label" for="gen-male">Male </label>
-
-                                            </div>
-                                            <div class="col-3">
-
-                                                <input class="form-check-input " type="radio" name="gender"
-                                                    id="gen-female" value="female">
-                                                <label class="form-check-label" for="gen-female">Female </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <label for="user-name">Educational Qualification(s) (Highest to be mentioned
-                                        first)</label>
-                                </div>
-                            </div>
-                            <div id="no-more-tables" class="row justify-content-center align-items-center mt-3">
-                                <table class="col-md-9 table-bordered table-striped table-condensed cf">
-
-                                    <thead class="cf">
-                                        <tr>
-                                            <th>Sr. No.</th>
-                                            <th>Degree/Qualification acquired</th>
-                                            <th>Name of college/school/institution</th>
-                                            <th>Univ./Board</th>
-                                            <th>Marks Obtained (% age)</th>
-                                            <th>Year</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Sr. No."><input type="text" name="sr-no1"
-                                                    class="form-control inpt" id="sr-no1"></td>
-                                            <td data-title="Qualification acquired"><input type="text" name="quali-aqu1"
-                                                    class="form-control inpt" id="quali-aqu1"></td>
-                                            <td data-title="Name of institution"><input type="text" name="coll-name1"
-                                                    class="form-control inpt" id="coll-name1"></td>
-                                            <td data-title="Univ./Board"> <input type="text" name="univ-board1"
-                                                    class="form-control inpt" id="univ-board1"></td>
-                                            <td data-title="Marks Obtained(%age)"><input type="number" name="marks1"
-                                                    class="form-control inpt" id="marks1"></td>
-                                            <td data-title="Year"> <input type="number" name="year1"
-                                                    class="form-control inpt" id="year1"></td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Sr. No."><input type="text" name="sr-no2"
-                                                    class="form-control inpt" id="sr-no2"></td>
-                                            <td data-title="Qualification acquired"><input type="text" name="quali-aqu2"
-                                                    class="form-control inpt" id="quali-aqu2"></td>
-                                            <td data-title="Name of institution"><input type="text" name="coll-name2"
-                                                    class="form-control inpt" id="coll-name2"></td>
-                                            <td data-title="Univ./Board"> <input type="text" name="univ-board2"
-                                                    class="form-control inpt" id="univ-board2"></td>
-                                            <td data-title="Marks Obtained(%age)"><input type="number" name="marks2"
-                                                    class="form-control inpt" id="marks2"></td>
-                                            <td data-title="Year"> <input type="number" name="year2"
-                                                    class="form-control inpt" id="year2"></td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Sr. No."><input type="text" name="sr-no3"
-                                                    class="form-control inpt" id="sr-no3"></td>
-                                            <td data-title="Qualification acquired"><input type="text" name="quali-aqu3"
-                                                    class="form-control inpt" id="quali-aqu3"></td>
-                                            <td data-title="Name ofinstitution"><input type="text" name="coll-name3"
-                                                    class="form-control inpt" id="coll-name3"></td>
-                                            <td data-title="Univ./Board"> <input type="text" name="univ-board3"
-                                                    class="form-control inpt" id="univ-board3"></td>
-                                            <td data-title="Marks Obtained(%age)"><input type="number" name="marks3"
-                                                    class="form-control inpt" id="marks3"></td>
-                                            <td data-title="Year"> <input type="number" name="year3"
-                                                    class="form-control inpt" id="year3"></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <div>
-                                        <label for="project-det"> Details of projects undertaken,if any :</label>
-                                        <textarea id="project-det" class="form-control mt-1" rows="3"></textarea>
-                                    </div>
-                                    <div>
-                                        <label for="present-stat">Present Status</label>
-                                        <textarea id="present-stat" class="form-control mt-1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9  ">
-                                    <label for="dis-int">Discipline(s) in which internship is sought</label>
-                                    <textarea id="dis-int" class="form-control mt-1" rows="3"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9  ">
-                                    <label for="area-work">Specific area(s) of work (in block letters) for the
-                                        internship, in order
-                                        of
-                                        priority (Project Summary in 200 word to be attached)</label>
+                        <div class="tab-content category-tab-content" id="register-tabContent">
+                            <!-- Step 1 -->
+                            
+                            <!-- /Step1 -->
+                            <!-- Step 2 -->
+                            <div class="tab-pane active" id="form-step2" role="tabpanel" aria-labelledby="form-step2-tab">
+                                <div class="container">
                                     <div class="row">
-                                        <div class="col-4">
-                                            <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
-                                        </div>
-                                        <div class="col-4">
-                                            <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
-                                        </div>
-                                        <div class="col-4">
-                                            <textarea id="area-work" class="form-control mt-1" rows="2"></textarea>
+                                        <div class="container mt-4">
+                                            <form id="form2" class="text-center">
+                                                <div class="row mt-3 ">
+                                                    <div class="col-md-4 col-4  offset-md-8">
+                                                        <img class="img" id="profile-img" height="200px" width="180" src="/images/railways/upload-placeholder.png" alt="your image">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-4 col-8 form-group offset-md-8">
+                                                        <label for="image-file">
+                                                            <b>
+                                                                Upload an image less than 2MB
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input class="float-right" type="file" id="image-file" onchange="readURL(this); ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-md-6">
+                                                        <label for="txtCorrespondenceAddress" class="float-left">
+                                                            <b>Correspondence Address</b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="txtCorrespondenceAddress" class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txtPermanentAddress" class="float-left">
+                                                            <b>
+                                                                Permanent Address
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="txtPermanentAddress" class="form-control" rows="3"></textarea>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-12">
+                                                        <div class="form-check float-left">
+                                                            <input class="form-check-input " type="checkbox" value="" id="chkAddress">
+                                                            <label class="form-check-label" for="chkAddress">
+                                                                <b>
+                                                                    Permanent Address same as Correspondence Address.
+                                                                </b>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label for="txtCorrespondenceMobile" class="float-left">
+                                                            <b>
+                                                                Mobile No.
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="txtCorrespondenceMobile" class="form-control" id="txtCorrespondenceMobile">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txtPermanentMobile" class="float-left">
+                                                            <b>
+                                                                Mobile No.
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="text" name="txtPermanentMobile" class="form-control" id="txtPermanentMobile">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6 ">
+                                                        <label for="txtDOB" class="float-left">
+                                                            <b>
+                                                                Date of Birth
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <input type="date" width="25%" name="txtDOB" class="form-control" id="txtDOB">
+                                                    </div>
+                                                    <div class="col-md-6 ">
+                                                        <div class="form-group">
+                                                            <label for="radioGender" class="text-left">
+                                                                <b>
+                                                                    Gender
+                                                                </b><b style="color:red">*</b>
+                                                            </label>
+                                                            <div class="form-check">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio" name="radioGender" id="male" value="male">
+                                                                        <label class="form-check-label" for="male">
+                                                                            <b>Male</b>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio" name="radioGender" id="female" value="female">
+                                                                        <label class="form-check-label" for="female">
+                                                                            <b>Female</b>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-check-input " type="radio" name="radioGender" id="others" value="female">
+                                                                        <label class="form-check-label" for="others">
+                                                                            <b>
+                                                                                Others
+                                                                            </b>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-md-12">
+                                                        <label for="user-name" class="float-left">
+                                                            <b>
+                                                                Educational Qualification(s) (Highest to be mentioned
+                                                                first)
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Div Table Row  -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">10th</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no" for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">12th / Diploma</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                    id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">Degree</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                                                                        id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Sr. No
+                                                                    </b>
+                                                                </label>
+                                                                <label class="sr-no" for="sr-no">Masters / PhD</label>
+                                                                <!-- <input type="text" name="quali-aqu1" class="form-control inpt"
+                                                                                                                                                                        id="quali-aqu1" disabled> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Qualification
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Name of College/ School
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Univ./Board
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none " for="sr-no">
+                                                                    <b>
+                                                                        Marks (%)
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group float-left">
+                                                                <label class="sr-no d-md-none ">
+                                                                    <b>
+                                                                        Year
+                                                                    </b>
+                                                                </label>
+                                                                <input type="text" name="quali-aqu1" class="form-control inpt" id="quali-aqu1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Div Table Row  -->
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6">
+                                                        <label for="project-det" class="float-left">
+                                                            <b>
+                                                                Details of projects undertaken,if any
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="project-det" class="form-control mt-1" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="present-stat" class="float-left">
+                                                            <b>
+                                                                Present Status of Projects (Completed, Ongoing etc.)
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="present-stat" class="form-control mt-1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6">
+                                                        <label for="dis-int" class="float-left">
+                                                            <b>
+                                                                Discipline(s) in which internship is sought
+                                                            </b><b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea id="dis-int" class="form-control mt-1" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="rel-info" class="float-left ">
+                                                            <b>
+                                                                Any other relevant
+                                                                information
+                                                            </b> <b style="color:red">*</b>
+                                                        </label>
+                                                        <textarea name="rel-info" class="form-control" id="rel-info" rows="3"> </textarea>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-md-12">
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input " type="checkbox" value="" id="certificate-script">
+                                                            <label class="form-check-label" for="certificate-script">
+                                                                <b>
+                                                                    I certify that the information furnished above is true to the best of my knowledge and belief.
+                                                                </b>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <center>
+                                                    <button type="submit" id="tab-basic-info" class="btn btn-primary w-50 my-3">
+                                                        Submit <i class="ml-2 fas fa-sign-out-alt"></i></button>
+                                                </center>
+
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- /Step2 -->
+                            <!-- Step 3 -->
+                            
+                            <!-- /Step3 -->
 
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-4  ">
-                                    <label for="location">Location/City preferred:</label>
-                                    <input type="text" name="location" class="form-control col-lg-8" id="location">
-                                </div>
+                        </div>
+                        <div class="subscription-section mt-4">
+                            <div class="section-content order-lg-1">
+                                <h3>Key Announcements For Students</h3>
+                                <ul class="student-announcements">
+                                    <li>Internships for students &amp; fresh engineers</li>
+                                    <li>From job seekers to job creators</li>
+                                    <li>
+                                        Rs 99,300 crore for Education sector in 2020-21 Apprenticeship embedded
+                                        courses
+                                    </li>
+                                    <li>
+                                        Online education programmes for students Financing Education Sector [FDI,
+                                        External
+                                        commercial borrowing]
+                                    </li>
+                                </ul>
 
-                                <div class="col-md-5 ">
-                                    <label for="duration">Duration months:</label>
-                                    <input type="number" name="duration" class="form-control col-lg-7" id="duration">
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9  ">
-                                    <label for="rel-info">Any other relevant information:</label>
-                                    <input type="number" name="rel-info" class="form-control" id="rel-info">
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9  ">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cer-script">
-                                        <label class="form-check-label" for="cer-script">
-                                            I certify that the information furnished above is true to the best of my
-                                            knowledge and
-                                            belief:
-                                        </label>
+                                <h3>Subscribe to our newsletter</h3>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="student@yourcollege.com" aria-label="student@yourcollege.com" aria-describedby="subscribe">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary">
+                                            Subscribe <i class="fas fa-arrow-right"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="row mt-5 ">
-                                <div class="col-6 offset-1 offset-md-6">
-
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                </div>
+                            <div class="img-wrap order-lg-0">
+                                <img src="/images/modiji.127ecbfe37036defa16c9b7bfcb44ac1.png" alt="">
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-md-6 col-12  offset-md-6">
+                        </div>
 
-                                    <label for="imageUpload"> Upload the Signature of the candidate</label>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-5">
-
-                                <div class="col-md-4">
-                                    <label for="ref-date">Date.</label>
-                                    <input type="text" name="ref-date" class="form-control col-lg-13" disabled
-                                        id="ref-date">
-                                </div>
-                                <div class="col-md-5">
-                                    <label for="ref-place">Place</label>
-                                    <input type="text" name="ref-place" class="form-control col-lg-10" id="ref-place">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row justify-content-center align-items-center mt-5">
-                                <div class="col-md-9">
-                                    <label for="ref-txt ">Authentication of particulars furnished above by the
-                                        Institute/University</label>
-                                    <label for="ref-txt ">This is to certify that the information furnished by
-                                        Mrs./Ms./Mr. <input type="text" name="ref-user-name"
-                                            class="form-control col-lg-3 d-inline" id="ref-user-name">
-                                        in the form of application
-                                        above is correct to the best of our knowledge.
-                                        Recommendation by HOD/faculty.</label>
-                                    <textarea id="ref-rec-1" class="form-control d-inline col-lg-3 mt-1"
-                                        rows="1"></textarea>
-                                    <textarea id="ref-rec-2" class="form-control d-inline mx-md-2 col-lg-3 mt-1"
-                                        rows="1"></textarea>
-
-                                </div>
-
-                            </div>
-                            <div class="row mt-5 ">
-                                <div class="col-6 offset-1 offset-md-6">
-
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-6 col-12  offset-md-6">
-
-                                    <label for="imageUpload">(Signature &amp; Seal of Authorized Official)</label>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -535,53 +665,94 @@ Label the data
                         <li><a href="#">Team Diary</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Privacy</a></li>
                     </ul>
                 </div>
 
                 <div class="section social">
                     <ul>
-                        <li><a href="#" class=""><i class="fab fa-facebook fa-3x"></i><span
-                                    class="sr-only">facebook</span></a></li>
-                        <li><a href="#" class=""><i class="fab fa-twitter fa-3x"></i><span
-                                    class="sr-only">twitter</span></a></li>
-                        <li><a href="#" class=""><i class="fab fa-instagram fa-3x"></i><span
-                                    class="sr-only">instagram</span></a></li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-facebook fa-3x"></i><span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-twitter fa-3x"></i><span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <i class="fab fa-instagram fa-3x"></i><span class="sr-only">instagram</span>
+                            </a>
+                        </li>
                     </ul>
-                    <p class="credit">Made with &#9829; in India | From Students to Students</p>
+                    <p class="credit">Made with ♥ in India | From Students to Students</p>
                 </div>
             </div>
         </footer>
     </main>
+
     <script src="/main.4ca7b78b38bd322a7c2b.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
+        $(document).ready(function () {
+
+            $("#image-file").change(function (data) {
+
+                var imageFile = data.target.files[0];
                 var reader = new FileReader();
+                reader.readAsDataURL(imageFile);
 
-                reader.onload = function (e) {
-                    $('#profile-img')
-                        .attr('src', e.target.result);
-                };
+                reader.onload = function (evt) {
+                    $('#profile-img').attr('src', evt.target.result);
+                    $('#profile-img').hide();
+                    $('#profile-img').fadeIn(650);
+                }
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $(document).ready(function(){
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
+            });
 
-            today = mm + '/' + dd + '/' + yyyy;
-            $('#ref-date').val(today);
-        })
-        
+        });
     </script>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+</body></html>
