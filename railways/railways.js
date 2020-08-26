@@ -133,48 +133,7 @@ $(document).ready(function(){
 					"Optimising use of air-conditioning for equipments and human comfort (Offline)",
 				],
 			},
-			"Finance Management": {
-				subcategories: [
-					"Green energy: Electricity generation through piezoelectric mechanism  (Offline)",
-					"Feasibility and suitability of installation of small scale on-grid wind mills over OHE masts (Offline)",
-					"Potential of utilization of surplus railway land for  solar power plants  (Offline)",
-					"Green buildings: Possibility and challenges in Railways’ context  (Offline)",
-					"Water Desalination plants: can coastal railways in India learn & adopt from Israel? (Offline)",
-					"Type of treatment to be given to rails to restrict corrosion/liner biting (Offline)",
-					"Detection if rail fractures through detection of discontinuity in rails by OFC cables  (Offline)",
-					"To make track free from glued joint, axle counter and signaling elements (Offline)",
-					"Use of railway land for solar panels to avoid CRO . (Offline)",
-					"Automation of water distribution system and getting rid of valve operating system (Offline)",
-					"Business development by utilizing Roof Tops Of Large COP areas (Offline)",
-					"Replacement of Iron/Steel  material in FOBs, Lift Frames, etc in coastal area (Offline)",
-				],
-			},
-			"Civil Engineering": {
-				subcategories: [
-					"Public private partnership (PPP) – study of opportunities, challenges etc (Offline)",
-					"Asset register and asset management, costing and commercial accounting  (Offline)",
-					"Capital budgeting and project costing  (Offline)",
-					"Zero based Budgeting  (Offline)",
-					"Rationalization of allowances (Offline)",
-				],
-			},
-			"Commercial and Marketing": {
-				subcategories: [
-					"Logistic and supply chain management (Offline)",
-					"Tendering in Railways along with contract management (Offline)",
-					"Ticketing system in Railways (Offline)",
-					"Terminal and Train Management system (Offline)",
-					"PPP models for development of freight  terminal and stations (Offline)",
-				],
-			},
-			"Materials Management": {
-				subcategories: [
-					"Process improvements for warranty claim realizations (Offline)",
-					"Increasing share of procurement through GeM  (Offline)",
-					"Development of efficient inventory management system (Offline)",
-				],
-			},
-			"Signaling and Telecommunication": {
+			"Electronics Signaling and Telecommunication": {
 				subcategories: [
 					"High reliability Train detection system (Offline)",
 					"Implementation of Integrated Security System (Offline)",
@@ -190,20 +149,13 @@ $(document).ready(function(){
 					"AI based power supply monitoring (Offline)",
 				],
 			},
-			"Operations Management and Logistics": {
+			"Civil Engineering": {
 				subcategories: [
-					"Contact-less integrated payment system",
-					"Bicycle train integration",
-					"Integrated control system for suburban railway",
-					"Crew Scheduling system for suburban railway",
-					"Access control of Suburban stations",
-					"Assisted signal sighting system for the crew",
-					"Assisted Troubleshooting system for the crew",
-					"AI based crew behaviour monitoring system",
-					"Integrating suburban network with State Public transport",
-					"Review existing train operation & working rules",
-					"Feasibility study for introducing AC trains in suburban system",
-					"Impact of Metro on Suburban train services requirement",
+					"Public private partnership (PPP) – study of opportunities, challenges etc (Offline)",
+					"Asset register and asset management, costing and commercial accounting  (Offline)",
+					"Capital budgeting and project costing  (Offline)",
+					"Zero based Budgeting  (Offline)",
+					"Rationalization of allowances (Offline)",
 				],
 			},
 			"Mechanical Engineering": {
@@ -234,6 +186,62 @@ $(document).ready(function(){
 					"Improvement of maintenance efficiency by reorganization of maintenance sections",
 					"Automation of maintenance activities.",
 					"Study & Update in cleaning practices of EMU coaches.",
+				],
+			},
+			"Commercial and Marketing": {
+				subcategories: [
+					"Logistic and supply chain management (Offline)",
+					"Tendering in Railways along with contract management (Offline)",
+					"Ticketing system in Railways (Offline)",
+					"Terminal and Train Management system (Offline)",
+					"PPP models for development of freight  terminal and stations (Offline)",
+				],
+			},
+			"Finance Management": {
+				subcategories: [
+					"Green energy: Electricity generation through piezoelectric mechanism  (Offline)",
+					"Feasibility and suitability of installation of small scale on-grid wind mills over OHE masts (Offline)",
+					"Potential of utilization of surplus railway land for  solar power plants  (Offline)",
+					"Green buildings: Possibility and challenges in Railways’ context  (Offline)",
+					"Water Desalination plants: can coastal railways in India learn & adopt from Israel? (Offline)",
+					"Type of treatment to be given to rails to restrict corrosion/liner biting (Offline)",
+					"Detection if rail fractures through detection of discontinuity in rails by OFC cables  (Offline)",
+					"To make track free from glued joint, axle counter and signaling elements (Offline)",
+					"Use of railway land for solar panels to avoid CRO . (Offline)",
+					"Automation of water distribution system and getting rid of valve operating system (Offline)",
+					"Business development by utilizing Roof Tops Of Large COP areas (Offline)",
+					"Replacement of Iron/Steel  material in FOBs, Lift Frames, etc in coastal area (Offline)",
+				],
+			},
+			"Operations Management and Logistics": {
+				subcategories: [
+					"Contact-less integrated payment system",
+					"Bicycle train integration",
+					"Integrated control system for suburban railway",
+					"Crew Scheduling system for suburban railway",
+					"Access control of Suburban stations",
+					"Assisted signal sighting system for the crew",
+					"Assisted Troubleshooting system for the crew",
+					"AI based crew behaviour monitoring system",
+					"Integrating suburban network with State Public transport",
+					"Review existing train operation & working rules",
+					"Feasibility study for introducing AC trains in suburban system",
+					"Impact of Metro on Suburban train services requirement",
+				],
+			},
+			"Human Resource Management": {
+				subcategories: [
+					"Yardstick Revision",
+					"360 deg Feedback Mechanism",
+					"Leadership Lessons on Railways",
+					"Railway Organizational structure",
+				],
+			},
+			"Materials Management": {
+				subcategories: [
+					"Process improvements for warranty claim realizations (Offline)",
+					"Increasing share of procurement through GeM  (Offline)",
+					"Development of efficient inventory management system (Offline)",
 				],
 			},
 			राजभाषा: {
