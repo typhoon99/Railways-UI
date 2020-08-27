@@ -8,10 +8,14 @@ textarea {
 .year-width{
     width: 3rem;
 }
+@media (max-width: 1199.98px){
 
-        .inpt {
-            /* border-color: white; */
-        }
+    .inpt {
+       width:60%;
+       margin: auto;
+    }
+}
+
 
         .img {
             width: 180px;
