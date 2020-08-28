@@ -127,7 +127,7 @@
                 <h2>Railway track alignment and design - 3 Months</h2>
                 <div class="actions">
                     <!-- <button class="btn btn-light"><i class="fa fa-download"></i></button> -->
-                    <button class="btn btn-primary">Assign Work</button>
+                    <button id="btnAssign" class="btn btn-primary" data-toggle="modal" data-target="#modalAssign">Assign Work</button>
                     <!-- <button class="btn btn-primary">Reject</button> -->
                 </div>
             </div>
@@ -182,7 +182,66 @@
                             </div>
                         </div>
 
-                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalAssign" tabindex="-1" role="dialog" aria-labelledby="modalAssignLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalAssignLabel">Assign Work</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label for="txtProject" class="float-left">
+                                                    <b>
+                                                        Project
+                                                    </b><b style="color:red">*</b>
+                                                </label>
+                                                <input type="text" name="txtProject" id="txtProject" class="form-control mb-4" placeholder="Task Name" required="">
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <label for="txtTask" class="float-left">
+                                                    <b>
+                                                        Task
+                                                    </b><b style="color:red">*</b>
+                                                </label>
+                                                <input type="text" name="txtTask" id="txtTask" class="form-control mb-4" placeholder="Task Name" required="">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label for="txtDate" class="float-left">
+                                                    <b>
+                                                        Expected Completion Date
+                                                    </b><b style="color:red">*</b>
+                                                </label>
+                                                <input type="date" name="txtDate" id="txtDate" class="form-control mb-4" required="">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="txtNotes" class="float-left">
+                                                    <b>
+                                                        Notes
+                                                    </b>
+                                                </label>
+                                                <textarea type="text" name="txtNotes" rows="3" id="txtNotes" class="form-control mb-4"
+                                                    placeholder="Optional Task Details"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success">Assign</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- <div class="row">
                             <div class="col">
                                 <div class="btn-wrap">

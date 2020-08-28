@@ -72,6 +72,7 @@ $(document).ready(function(){
 			},
 			"West Central Railway": {
 				divisions: ["Jabalpur", "Bhopal", "Kota "],
+				workshops: ["Jabalpur", "Bhopal", "Kota "],
 			},
 			"North Central Railway": {
 				divisions: ["Prayagraj", "Agra", "Jhansi"],
