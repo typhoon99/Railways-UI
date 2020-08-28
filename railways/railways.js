@@ -42,7 +42,7 @@ $(document).ready(function(){
 				divisions: ["Adra", "Chakradharpur", "Kharagpur", "Ranchi"],
 			},
 			"South Central Railway": {
-				divisions: ["Secunderabad", "Hyderabad", "Hazur Sahib Nanded"],
+				divisions: ["Secunderabad", "Hyderabad", "Hazur Sahib Nanded", "Vijaywada","Guntur","Guntakal",],
 			},
 			"Southern Railway": {
 				divisions: [
@@ -80,7 +80,7 @@ $(document).ready(function(){
 				divisions: ["Bilaspur", "Raipur", "Nagpur SEC"],
 			},
 			"East Coast Railway": {
-				divisions: ["Khudra Road", "Sambalpur", "Rayagada"],
+				divisions: ["Khudra Road", "Sambalpur", "Rayagada","Waltair"],
 			},
 			"East Central Railway": {
 				divisions: [
@@ -92,10 +92,7 @@ $(document).ready(function(){
 				],
 			},
 			"Metro Railway": {
-				divisions: ["Line 1", "Line 2"],
-			},
-			"South Coast Railway": {
-				divisions: ["Vijaywada", "Guntur", "Guntakal"],
+				divisions: ["Kolkata"],
 			},
 		},
 	};
