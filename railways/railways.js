@@ -366,15 +366,19 @@ $(document).ready(function(){
 				);
 				$("#select-zone-tab i").first().addClass("filled");
 				$("#select-zone-tab span").first().addClass("filled");
-				var template = $("#divisionTemplate").html();
+				var template_div = $("#divisionTemplate").html();
+				var template_ws = $("#workshopTemplate").html();
 				// Compile the template data into a function
-				var templateScript = Handlebars.compile(template);
+				var templateScript_div = Handlebars.compile(template_div);
+				var templateScript_ws = Handlebars.compile(template_ws);
 				var zoneId = $(this).find("label").html();
 				// console.log(zoneId);
 				var divs = zoneContext.zones[zoneId];
 				// console.log(divs);
-				var html = templateScript(divs);
-				$("#divisionRow").append(html);
+				var html_div = templateScript_div(divs);
+				var html_ws = templateScript_ws(divs);
+				$("#divisionRow").append(html_div);
+				$("#workshopRow").append(html_ws);
 				$("#select-division-tab").tab("show");
 
 				//on hover show check mark
