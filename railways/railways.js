@@ -13,6 +13,7 @@ $(document).ready(function(){
 					"Solapur",
 					"Nagpur CR",
 				],
+				workshop: ["Parel", "Matunga", "Kurdwadi"],
 			},
 			"Northen Railway": {
 				divisions: [
@@ -22,9 +23,17 @@ $(document).ready(function(){
 					"Lucknow",
 					"Moradabad",
 				],
+				workshops: [
+					"Charbagh",
+					"Alambagh",
+					"Amritsar",
+					"Jagadhri",
+					"Kalka",
+				],
 			},
 			"North Eastern Railway": {
 				divisions: ["Izzatnagar", "Lucknow NER", "Varanasi"],
+				workshops: ["Gorakhpur", "Izatnagar"],
 			},
 			"Northeast Frontier Railway": {
 				divisions: [
@@ -34,15 +43,26 @@ $(document).ready(function(){
 					"Lumding",
 					"Tinsukia",
 				],
+				workshops: ["Dibrugarh", "NewBongaigaon", "Tindharia"],
 			},
 			"Eastern Railway": {
 				divisions: ["Howrah", "Sealdah", "Asansol", "Malda"],
+				workshop: ["Jamalpur", "Lilluah", "Kanchrapara", "Budge Budge"],
 			},
 			"South Eastern Railway": {
 				divisions: ["Adra", "Chakradharpur", "Kharagpur", "Ranchi"],
+				workshops: ["Kharagpur (Main)", "Kharagpur (Wagon)", "Haldia"],
 			},
 			"South Central Railway": {
-				divisions: ["Secunderabad", "Hyderabad", "Hazur Sahib Nanded", "Vijaywada","Guntur","Guntakal",],
+				divisions: [
+					"Secunderabad",
+					"Hyderabad",
+					"Hazur Sahib Nanded",
+					"Vijaywada",
+					"Guntur",
+					"Guntakal",
+				],
+				workshops: ["Lallaguda", "Guntapalli"],
 			},
 			"Southern Railway": {
 				divisions: [
@@ -52,6 +72,12 @@ $(document).ready(function(){
 					"Palakkad",
 					"Salem",
 					"Thiruvananthapurum",
+				],
+				workshops: [
+					"Perambur(Carr.)",
+					"Perambur(Loco.)",
+					"Golden Rock",
+					"Lallaguda",
 				],
 			},
 			"Western Railway": {
@@ -63,25 +89,42 @@ $(document).ready(function(){
 					"Bhavnagar",
 					"Vadodara",
 				],
+				workshops: [
+					"Dahod",
+					"Lower Parel",
+					"Mahalaxmi",
+					"Pratapnagar",
+					"Bhavnagar",
+				],
 			},
 			"South Western Railway": {
 				divisions: ["Hubballi", "Bengaluru", "Mysuru"],
+				workshops: ["Mysore", "Hubli"],
 			},
 			"North Western Railway": {
 				divisions: ["Jaipur", "Ajmer", "Bikaner", "Jodhpur"],
+				workshops: [
+					"Ajmer (Carr.)",
+					"Ajmer (Loco.)",
+					"Bikaner",
+					"Jodhpur",
+				],
 			},
 			"West Central Railway": {
 				divisions: ["Jabalpur", "Bhopal", "Kota "],
-				workshops: ["Jabalpur", "Bhopal", "Kota "],
+				workshops: ["Kota","Bhopal"],
 			},
 			"North Central Railway": {
 				divisions: ["Prayagraj", "Agra", "Jhansi"],
+				workshops: ["Jhansi", "Gwalior"],
 			},
 			"South East Central Railway": {
 				divisions: ["Bilaspur", "Raipur", "Nagpur SEC"],
+				workshops: ["Nagpur", "Raipur"],
 			},
 			"East Coast Railway": {
-				divisions: ["Khudra Road", "Sambalpur", "Rayagada","Waltair"],
+				divisions: ["Khudra Road", "Sambalpur", "Rayagada", "Waltair"],
+				workshops: ["Mancheswar"],
 			},
 			"East Central Railway": {
 				divisions: [
@@ -91,8 +134,9 @@ $(document).ready(function(){
 					"Samastipur",
 					"Sonpur",
 				],
+				workshops: ["Harnaut", "Samastipur"],
 			},
-			"Metro Railway": {
+			"Metro Railway (Kolkata)": {
 				divisions: ["Kolkata"],
 			},
 		},
@@ -378,9 +422,14 @@ $(document).ready(function(){
 				var html_div = templateScript_div(divs);
 				var html_ws = templateScript_ws(divs);
 				$("#divisionRow").append(html_div);
-				$("#workshopRow").append(html_ws);
+				if(zoneId == "Metro Railway (Kolkata)")
+				{
+					$("#workshopsDiv").addClass('d-none');
+				}
+				else{
+					$("#workshopRow").append(html_ws);
+				}
 				$("#select-division-tab").tab("show");
-
 				//on hover show check mark
 				$(".division").hover(
 					function () {
