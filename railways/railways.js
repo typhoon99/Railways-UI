@@ -160,15 +160,15 @@ $(document).ready(function(){
 					"Materials Management system in Traction Distribution (Online)",
 					"Power quality monitoring , power measurements and fault detection  (Offline)",
 					"Design and construction of 25 KV substation, 22/2.2 KV substation  (Offline)",
-					"Mechanized working in the field of stripping,dismantling etc (Offline)",
+					"Mechanized working in the field of stripping, dismantling (Offline)",
 					"Failure analysis of electronics card and its remedies (Offline)",
 					"Transportation and handling of various equipment  (Offline)",
 					"Formation of quality circles, data analysis and attention thereof (Offline)",
-					"Development of R &D sections & laboratory to eradicate recurring defects  (Offline)",
+					"Development of R&D sections & laboratory to eradicate recurring defects  (Offline)",
 					"Needs of specialization team for exchanging ideas  quality maintenance  (Offline)",
 					"Pictorial demonstrations for upgrading skills of maintenance staff, supervisors etc (Offline)",
-					"Automation of crane working by decontrol from work place. (Offline)",
-					"Design,develop and installation of occupancy sensors to office buildings. (Offline)",
+					"Automation of crane working by decontrol from work place (Offline)",
+					"Design, development and installation of occupancy sensors to office buildings (Offline)",
 					"Automation of measuring & recording systems various electrical equipments (Offline)",
 					"Multi Skilling of staff  to get optimum utilization of  manpower (Offline)",
 					"Temperature sensing, monitoring, communicating & preventive action in power supply panels (Offline)",
@@ -212,22 +212,22 @@ $(document).ready(function(){
 					"Vibration analysis & study of feasibility of onboard condition monitoring of rolling stock",
 					"Use of piezo based energy harvesting in wayside locations",
 					"Study preventive maintenance schedule & optimise the activities",
-					"Study air suspension system,FIBA and compare with spring suspension system.",
+					"Study air suspension system,FIBA and compare with spring suspension system",
 					"Study cases of train parting and suggest improvements",
 					"Pros & cons of train set type rolling stock wrt conventional locomotive lead trains",
 					"Study various types of coupler and their design",
 					"Optimize depth of cut during tyre turning to increase wheel life",
-					"Analyze wheel shelling cases in LHB coaches & find major causes.",
+					"Analyze wheel shelling cases in LHB coaches & find major causes",
 					"Analyze spring breakage cases in FIAT bogie & find major causes",
 					"Study FIAT bogie design to identify vulnerable areas due to vibration at High speed",
 					"Maintenance,monitoring and performance analysis of inverters fitted in SGAC coaches ",
 					"Online monitoring of Temperature & engine parameter with alert notification",
 					"Failure analysis of V belt breakage in SGAC coaches",
 					"Maintenance and testing of healthiness of push pull system",
-					"AI based Fire detection and suppression system in EMU using CCTV.",
+					"AI based Fire detection and suppression system in EMU using CCTV",
 					"Improvement of maintenance efficiency by reorganization of maintenance sections",
-					"Automation of maintenance activities.",
-					"Study & Update in cleaning practices of EMU coaches.",
+					"Automation of maintenance activities",
+					"Study & Update in cleaning practices of EMU coaches",
 				],
 			},
 			"Commercial and Marketing": {
@@ -249,7 +249,7 @@ $(document).ready(function(){
 					"Type of treatment to be given to rails to restrict corrosion/liner biting (Offline)",
 					"Detection if rail fractures through detection of discontinuity in rails by OFC cables  (Offline)",
 					"To make track free from glued joint, axle counter and signaling elements (Offline)",
-					"Use of railway land for solar panels to avoid CRO . (Offline)",
+					"Use of railway land for solar panels to avoid CRO (Offline)",
 					"Automation of water distribution system and getting rid of valve operating system (Offline)",
 					"Business development by utilizing Roof Tops Of Large COP areas (Offline)",
 					"Replacement of Iron/Steel  material in FOBs, Lift Frames, etc in coastal area (Offline)",
@@ -286,7 +286,7 @@ $(document).ready(function(){
 					"Development of efficient inventory management system (Offline)",
 				],
 			},
-			राजभाषा: {
+			"राजभाषा": {
 				subcategories: [
 					"राजभाषा और तकनीकी विन्यास",
 					"सूचना प्रौद्योगिकी और राजभाषा",
@@ -344,7 +344,12 @@ $(document).ready(function(){
 		// Insert the HTML code into the page
 		$("#subCategoryRow").append(html);
 		$("#select-project-tab").tab("show");
-
+		$("html,body").animate(
+			{
+				scrollTop: $("#select-project-tab").offset().top,
+			},
+			1000
+		);
 		$(".subcategory").hover(
 			function () {
 				$(this).append(
@@ -392,6 +397,12 @@ $(document).ready(function(){
 			// Insert the HTML code into the page
 			$("#zonesRow").append(html);
 			$("#select-zone-tab").tab("show");
+			$("html,body").animate(
+				{
+					scrollTop: $("#select-zone-tab").offset().top,
+				},
+				1000
+			);
 			//on hover show check mark
 			$(".zone").hover(
 				function () {
@@ -430,6 +441,12 @@ $(document).ready(function(){
 					$("#workshopRow").append(html_ws);
 				}
 				$("#select-division-tab").tab("show");
+				$("html,body").animate(
+					{
+						scrollTop: $("#select-division-tab").offset().top,
+					},
+					1000
+				);
 				//on hover show check mark
 				$(".division").hover(
 					function () {
