@@ -411,22 +411,22 @@ $(document).ready(function(){
 				$("#select-zone-tab i").first().addClass("filled");
 				$("#select-zone-tab span").first().addClass("filled");
 				var template_div = $("#divisionTemplate").html();
-				var template_ws = $("#workshopTemplate").html();
 				// Compile the template data into a function
 				var templateScript_div = Handlebars.compile(template_div);
-				var templateScript_ws = Handlebars.compile(template_ws);
 				var zoneId = $(this).find("label").html();
 				// console.log(zoneId);
 				var divs = zoneContext.zones[zoneId];
 				// console.log(divs);
 				var html_div = templateScript_div(divs);
-				var html_ws = templateScript_ws(divs);
 				$("#divisionRow").append(html_div);
 				if(zoneId == "Metro Railway (Kolkata)")
 				{
 					$("#workshopsDiv").addClass('d-none');
 				}
 				else{
+					var template_ws = $("#workshopTemplate").html();
+					var templateScript_ws = Handlebars.compile(template_ws);
+					var html_ws = templateScript_ws(divs);
 					$("#workshopRow").append(html_ws);
 				}
 				$("#select-division-tab").tab("show");
