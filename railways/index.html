@@ -150,7 +150,27 @@
 
                         <ul class="nav nav-tabs register-tab" id="register-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link select-category active" id="select-category-tab" data-toggle="tab"
+                                <a class="nav-link select-zone active" id="select-zone-tab" data-toggle="tab" href="#select-zone" role="tab"
+                                    aria-controls="select-zone" aria-selected="false">
+                                    <i class="fas fa-train  reg-ico"></i>
+                            
+                                    <span class="reg-heading">
+                                        Zone
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link select-division" id="select-division-tab" data-toggle="tab" href="#select-division" role="tab"
+                                    aria-controls="select-division" aria-selected="false">
+                                    <i class="fas fa-braille reg-ico"></i>
+                                    <span class="reg-heading">
+                                        Division
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link select-category" id="select-category-tab" data-toggle="tab"
                                     href="#select-category" role="tab" aria-controls="select-category"
                                     aria-selected="false">
                                     <i class="fa fa-list-alt reg-ico"></i>
@@ -171,30 +191,10 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link select-zone" id="select-zone-tab" data-toggle="tab"
-                                    href="#select-zone" role="tab" aria-controls="select-zone" aria-selected="false">
-                                    <i class="fas fa-train  reg-ico"></i>
-
-                                    <span class="reg-heading">
-                                        Zone
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link select-division" id="select-division-tab" data-toggle="tab"
-                                    href="#select-division" role="tab" aria-controls="select-division"
-                                    aria-selected="false">
-                                    <i class="fas fa-braille reg-ico"></i>
-                                    <span class="reg-heading">
-                                        Division
-                                    </span>
-                                </a>
-                            </li>
                         </ul>
 
                         <div class="tab-content category-tab-content" id="register-tabContent">
-                            <div class="tab-pane active" id="select-category" role="tabpanel"
+                            <div class="tab-pane" id="select-category" role="tabpanel"
                                 aria-labelledby="select-category-tab">
 
                                 <section>
@@ -307,9 +307,52 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h4 class="text-center">Couldn't find the project of your choice? <a
-                                                            href="#" id="subCategory-work" class="text-primary">Suggest
-                                                            your own.</a></h4>
+                                                    <h4 class="text-center">Couldn't find the project of your choice? 
+                                                        <a href="#" id="subCategory-work" class="text-primary">Suggest
+                                                            your own.
+                                                        </a>
+                                                    </h4>
+                                                            <!-- Modal -->
+                                                    <div class="modal fade" id="modalSuggest" tabindex="-1" role="dialog" aria-labelledby="modalSuggestLabel"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="modalSuggestLabel">Suggest a project you would like us to add in YARI</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <label for="txtProjectName" class="float-left">
+                                                                                <b>
+                                                                                    Suggested Project Name
+                                                                                </b><b style="color:red">*</b>
+                                                                            </label>
+                                                                            <input type="text" name="txtProjectName" id="txtProjectName" class="form-control mb-4" placeholder="Please enter name of suggested project." required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <label for="txtDescription" class="float-left">
+                                                                                <b>
+                                                                                    Project Description
+                                                                                </b><b style="color:red">*</b>
+                                                                            </label>
+                                                                            <textarea type="text" name="txtDescription" rows="3" id="txtDescription" class="form-control mb-4"
+                                                                                placeholder="Please explain your proposed project, so we can evaluate your idea."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" id="btnSuggest" class="btn btn-primary">Suggest</button>
+                                                                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </section>
                                             </div>
                                         </div>
@@ -317,7 +360,7 @@
                                 </section>
                             </div>
 
-                            <div class="tab-pane" id="select-zone" role="tabpanel" aria-labelledby="select-zone-tab">
+                            <div class="tab-pane active" id="select-zone" role="tabpanel" aria-labelledby="select-zone-tab">
                                 <section class="mt-5">
                                     <div class="container ">
                                         <div id="corporate_form">
@@ -419,7 +462,6 @@
                         </div>
                         </form>
                     </div>
-
 
                     <div class="subscription-section">
                         <div class="section-content order-lg-1">
