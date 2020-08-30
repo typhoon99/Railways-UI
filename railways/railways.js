@@ -7,7 +7,7 @@ var zoneContext = {
 	zones: {
 		"Central Railway": {
 			divisions: ["Mumbai", "Bhusawal", "Pune ", "Solapur", "Nagpur CR"],
-			workshop: ["Parel", "Matunga", "Kurdwadi"],
+			workshops: ["Parel", "Matunga", "Kurdwadi"],
 		},
 		"Northen Railway": {
 			divisions: ["Delhi", "Ambala", "Firozpur", "Lucknow", "Moradabad"],
@@ -35,7 +35,7 @@ var zoneContext = {
 		},
 		"Eastern Railway": {
 			divisions: ["Howrah", "Sealdah", "Asansol", "Malda"],
-			workshop: ["Jamalpur", "Lilluah", "Kanchrapara", "Budge Budge"],
+			workshops: ["Jamalpur", "Lilluah", "Kanchrapara", "Budge Budge"],
 		},
 		"South Eastern Railway": {
 			divisions: ["Adra", "Chakradharpur", "Kharagpur", "Ranchi"],
