@@ -95,7 +95,11 @@ $(document).ready(function () {
 			// console.log($(this).val());
 			Zone = $(this).val();
 			$("#selectDivision").find("option").remove();
+			$("#selectDivision").append('<option value="" disabled selected>Select Division or Workshop</option>');
 			$("#selectCategory").find("option").remove();
+			$("#selectCategory").append(
+				'<option value="" disabled selected>Select Department</option>'
+			);
 			var form = new FormData();
 			form.append("new_zone", true);
 			form.append("zone_id", Zone);
@@ -181,7 +185,7 @@ $(document).ready(function () {
 								var projects = {
 									objects: JSON.parse(response),
 								};
-								console.log(projects);
+								//console.log(projects);
 								var template = $("#projectsTemplate").html();
 								// Compile the template data into a function
 								var templateScript = Handlebars.compile(template);
@@ -189,6 +193,9 @@ $(document).ready(function () {
 								// console.log(html);
 								// Insert the HTML code into the page
 								$("#table").append(html);
+								$(".btnEdit").on('click',function(){
+									$('#modalEdit').modal('show');
+								})
 								$(".btnDelete").on('click',function(){
 									var id = $(this);
 									console.log(id);
