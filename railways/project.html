@@ -162,7 +162,7 @@
                             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalEditLabel">Edit Project</h5>
+                                        <h5 class="modal-title" id="modalNewLabel">Add New Project</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -215,7 +215,7 @@
                                 <div class="table-responsive py-4">
                                     <table class="table" id="tblProjects">
                                     <thead>
-                                        <tr>
+                                        <tr class="thead">
                                             <th>Sr.No.</th>
                                             <th>Project</th>
                                             <th>Nature</th>
@@ -224,7 +224,7 @@
                                         </tr>
                                     </thead>
                                     <tfoot>
-                                        <tr>
+                                        <tr class="tfoot">
                                             <th>Sr.No.</th>
                                             <th>Project</th>
                                             <th>Nature</th>
@@ -235,10 +235,11 @@
                                     <tbody id="table">
                                         <script id="projectsTemplate" type="text/x-handlebars-template">
                                             {{#each objects}}
-                                            <tr id="{{this.id}}">
+                                            <tr id="{{this.id}}" class="projectRow">
                                                 <td label="Sr No" class="h5">{{inc @index}}</td>
                                                 <td label="Project" class="h5">{{this.project_name}}</td>
-                                                <td label="Project" class="h5">{{this.project_nature}}</td>
+                                                <td label="ProjectNature" class="h5">{{this.project_nature}}</td>
+                                                <td label="ProjectDescription" class="d-none">{{this.project_description}}</td>
                                                 <td label="Update" class="h5"><button class="btn btn-white btnEdit"><i class="fa fa-edit"></i></button></td>
                                                 <td label="Delete" class="h5"><button class="btn btn-white btnDelete"><i class="fa fa-trash-alt"></i></button></td>
                                             </tr>

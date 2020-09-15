@@ -97,6 +97,7 @@ $(document).ready(function () {
 			Division = "";
 			Category = "";
 			Project = "";
+			$("#tblProjects").find(".projectRow").remove();
 			$("#selectDivision").find("option").remove();
 			$("#selectDivision").append('<option value="" disabled selected>Select Division or Workshop</option>');
 			$("#selectCategory").find("option").remove();
@@ -131,6 +132,7 @@ $(document).ready(function () {
 					Division = $(this).val();
 					Category = "";
 					Project = "";
+					$("#tblProjects").find(".projectRow").remove();
 					var type =
 						$(this).find(":selected").attr("class") ===
 						"divisionOption"
@@ -168,7 +170,7 @@ $(document).ready(function () {
 						$("#selectCategory").on("change", function () {
 							Category = $(this).val();
 							Project = "";
-							$("#tblProjects").find("tr").remove();
+							$("#tblProjects").find(".projectRow").remove();
 							// console.log(Category);
 							// showProjects();
 							var form = new FormData();
@@ -201,7 +203,71 @@ $(document).ready(function () {
 								// Insert the HTML code into the page
 								$("#table").append(html);
 								$(".btnEdit").on('click',function(){
+									var id = $(this).parent().parent().attr("id");
+										var oldTitle = $('#'+id).find('td[label="Project"]').html();
+										var oldNature = ($('#'+id).find('td[label="ProjectNature"]').html() == "Online") ? true : false;
+										var oldDescription = $('#'+id).find('td[label="ProjectDescription"]').html();
+										$("#txtEditProject").val(oldTitle);
+										$("#txtEditDescription").val(oldDescription);
+										$("#chkEditNature").prop("checked",oldNature);
+										// console.log(title);
 									$('#modalEdit').modal('show');
+									$('#btnEdit').on('click',function(){
+										var nature = $("#chkEditNature").prop("checked")
+											? "Online"
+											: "Offline";
+										var name = $("#txtEditProject").val().trim();
+										var description = $("#txtEditDescription").val().trim();
+										console.log(nature, name, description);
+										var form = new FormData();
+										form.append("zone_id", Zone);
+										form.append("division_id", Division);
+										form.append("category_id", Category);
+										form.append("project_nature", nature);
+										form.append("project_name", name);
+										form.append("project_description",description);
+										form.append("id",id);
+										form.append("update_project", "true");
+										for (var pair of form.entries()) {
+											console.log(
+												pair[0] + " - " + pair[1]
+											);
+										}
+										var settings = {
+											url:
+												"https://internship.aicte-india.org/internshipinindianrailways/src/php/main.php",
+											method: "POST",
+											timeout: 0,
+											processData: false,
+											mimeType: "multipart/form-data",
+											contentType: false,
+											data: form,
+										};
+
+										$.ajax(settings).done(function (
+											response
+										) {
+											console.log(response);
+											if (response == "success") {
+												swal(
+													"Project has been updated!",
+													{
+														icon: "success",
+													}
+												);
+												$('#'+id).find('td[label="Project"]').html(name);
+												$('#'+id).find('td[label="ProjectNature"]').html(nature);
+												$('#'+id).find('td[label="ProjectDescription"]').html(description);
+												$("#modalEdit").modal("hide");
+												$("#chkEditNature").prop(
+													"checked",
+													false
+												);
+												$("#txtEditProject").val("");
+												$("#txtEditDescription").val("");
+											}
+										});
+									})
 								})
 								$(".btnDelete").on('click',function(){
 									var id = $(this).parent().parent().attr("id");
@@ -263,46 +329,53 @@ $(document).ready(function () {
 	$("#btnNewModal").on("click", function () {
 		if (Zone != "" && Division != "" && Category != "") {
 			$("#modalNew").modal("show");
+			$("#btnAdd").on("click", function () {
+				var nature = $("#chkNature").prop("checked")
+					? "Online"
+					: "Offline";
+				var name = $("#txtNewProject").val().trim();
+				var description = $("#txtNewDescription").val().trim();
+				console.log(nature, name, description);
+				var form = new FormData();
+				form.append("zone_id", Zone);
+				form.append("division_id", Division);
+				form.append("category_id", Category);
+				form.append("project_nature", nature);
+				form.append("project_name", name);
+				form.append("project_description", description);
+				form.append("add_project", "true");
+				for (var pair of form.entries()) {
+					console.log(pair[0] + " - " + pair[1]);
+				}
+				var settings = {
+					url:
+						"https://internship.aicte-india.org/internshipinindianrailways/src/php/main.php",
+					method: "POST",
+					timeout: 0,
+					processData: false,
+					mimeType: "multipart/form-data",
+					contentType: false,
+					data: form,
+				};
+
+				$.ajax(settings).done(function (response) {
+					console.log(response);
+					if (response == "success") {
+						swal("Project has been added!", {
+							icon: "success",
+						});
+						$("#modalNew").modal("hide");
+						$("#chkNature").prop("checked", false);
+						$("#txtNewProject").val("");
+						$("#txtNewDescription").val("");
+						var selectedDepartment = $("#selectCategory").val();
+						$("#selectCategory").val(selectedDepartment).trigger("change");
+					}
+				});
+			});
 		} else {
 			alert("Please select Zone, Division and Department");
 		}
 	});
-	$("#btnAdd").on('click',function(){
-		var nature = ($("#chkNature").prop("checked")) ? "Online" : "Offline";
-		var name = $("#txtNewProject").val().trim();
-		var description = $("#txtNewDescription").val().trim();
-		console.log(nature, name, description);
-		var form = new FormData();
-		form.append("zone_id", Zone);
-		form.append("division_id", Division);
-		form.append("category_id", Category);
-		form.append("project_nature", nature);
-		form.append("project_name", name);
-		form.append("project_description", description);
-		form.append("add_project", "true");
-		for (var pair of form.entries()) {
-			console.log(pair[0] + " - " + pair[1]);
-		}
-		var settings = {
-			url:
-				"https://internship.aicte-india.org/internshipinindianrailways/src/php/main.php",
-			method: "POST",
-			timeout: 0,
-			processData: false,
-			mimeType: "multipart/form-data",
-			contentType: false,
-			data: form,
-		};
-
-		$.ajax(settings).done(function (response) {
-			console.log(response);
-			if(response == "success")
-			{
-				swal("Project has been added!", {
-					icon: "success",
-				});
-				$("#modalNew").modal("hide");
-			}
-		});
-	});
+	
 });
