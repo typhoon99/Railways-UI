@@ -54,9 +54,9 @@ $(document).ready(function () {
 		);
 		$(".zone").on("click", function () {
 			$(this).prev().attr("checked", "true");
-			$(this).append(
-				'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
-			);
+			// $(this).append(
+			// 	'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
+			// );
 			$("#select-zone-tab i").first().addClass("filled");
 			$("#select-zone-tab span").first().addClass("filled");
 			// console.log($(this).prev().val());
@@ -167,9 +167,9 @@ $(document).ready(function () {
 						);
 						$(".category").on("click", function () {
 							$(this).prev().attr("checked", "true");
-							$(this).append(
-								'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
-							);
+							// $(this).append(
+							// 	'<i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>'
+							// );
 							$("#select-category-tab i")
 								.first()
 								.addClass("filled");
@@ -181,9 +181,9 @@ $(document).ready(function () {
 								$(this).find("label").html();
 							$("#subCategory-heading").text(subHeading);
 							// console.log(subHeading);
-							$(this).append(
-								'<i class="fa fa-check text-success" aria-hidden="true"></i>'
-							);
+							// $(this).append(
+							// 	'<i class="fa fa-check text-success" aria-hidden="true"></i>'
+							// );
 							Category = $(this).prev().attr("id");
 							// console.log(Category);
 							var form = new FormData();

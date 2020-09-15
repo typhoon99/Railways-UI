@@ -153,7 +153,7 @@
                                         </p>
                                     </div>
                                     <div class="col text-right">
-                                        <button id="btnNewModal" type="button" class="btn btn-lg btn-primary btn-icon" data-toggle="modal" data-target="#modalNew" data-backdrop="static" data-keyboard="false">
+                                        <button id="btnNewModal" type="button" class="btn btn-lg btn-primary btn-icon" data-backdrop="static" data-keyboard="false">
                                             <span class="btn-inner--icon"><i class="fa fa-plus-circle fa-2x"></i></span>
                                             <span class="btn-inner--text h2 text-white">Add Project</span>
                                         </button>
@@ -235,7 +235,7 @@
                                     <tbody id="table">
                                         <script id="projectsTemplate" type="text/x-handlebars-template">
                                             {{#each objects}}
-                                            <tr>
+                                            <tr id="{{this.id}}">
                                                 <td label="Sr No" class="h5">{{inc @index}}</td>
                                                 <td label="Project" class="h5">{{this.project_name}}</td>
                                                 <td label="Project" class="h5">{{this.project_nature}}</td>
