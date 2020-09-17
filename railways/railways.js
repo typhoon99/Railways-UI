@@ -9,6 +9,7 @@ Handlebars.registerHelper("inc", function (value, options) {
 });
 
 $(document).ready(function () {
+
 	//Disable Click on Nav Tabs
 	$(
 		"#select-category-tab, #select-project-tab, #select-zone-tab, #select-division-tab"
@@ -205,7 +206,7 @@ $(document).ready(function () {
 
 							$.ajax(settings).done(function (response) {
 								var projects = {objects :JSON.parse(response)};
-								//console.log(projects);
+								console.log(projects);
 								var template = $("#subCategoryTemplate").html();
 								// Compile the template data into a function
 								var templateScript = Handlebars.compile(
