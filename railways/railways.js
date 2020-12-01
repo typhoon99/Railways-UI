@@ -62,7 +62,7 @@ $(document).ready(function () {
 			$("#select-zone-tab span").first().addClass("filled");
 			// console.log($(this).prev().val());
 			Zone = $(this).prev().val();
-			//console.log(Zone);
+			console.log(Zone);
 			var form = new FormData();
 			form.append("new_zone", true);
 			form.append("zone_id", Zone);
@@ -89,7 +89,7 @@ $(document).ready(function () {
 				//console.log(divisions);
 				var html_div = templateScript_div(divisions);
 				$("#divisionRow").append(html_div);
-				if (Zone == "MTP") {
+				if (Zone == "MTP" || Zone == "HQ") {
 					$("#workshopsDiv").addClass("d-none");
 				} else {
 					var template_ws = $("#workshopTemplate").html();
@@ -104,6 +104,7 @@ $(document).ready(function () {
 					},
 					1000
 				);
+				
 				//on hover show check mark
 				$(".division").hover(
 					function () {
@@ -118,7 +119,8 @@ $(document).ready(function () {
 				$(".division").on("click", function () {
 					Division = $(this).find("label").html();
 					var type = $(this).find("label").attr("type");
-					//console.log(type);
+					console.log(Division);
+					console.log(type);
 					$(this).prev().attr("checked", "true");
 					$("#select-division-tab i").first().addClass("filled");
 					$("#select-division-tab span").first().addClass("filled");
@@ -309,6 +311,11 @@ $(document).ready(function () {
 						});
 					});
 				});
+			if (Zone == "HQ") {
+				//console.log("In HQ");
+				$(".division").click();
+				//console.log("Division clicked");
+			}
 			});
 		});
 	});
