@@ -1,6 +1,6 @@
-    
-   
-   
+
+
+
 .radio-tile-group .card{
     width: 15rem;
     height: 15rem;
@@ -17,22 +17,21 @@
     border: 2px solid #f44336;
     color: white;
     transform: scale(1.1, 1.1);
-    
+
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* height: 110vh; */
 }
 
-/* .radio-tile-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.radio-tile-group {
+    /* background-color: #f44336; */
+    justify-content: space-around;
 
-} */
+}
 
 .input-container {
     position: relative;
@@ -86,7 +85,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     width: 100%;
     height: 100%;
     border: 2px solid #ff865b ;
@@ -111,8 +110,8 @@
     color: black;
 }
 
-.radio-tile-group .input-container 
-.radio-button:checked + .radio-tile 
+.radio-tile-group .input-container
+.radio-button:checked + .radio-tile
 .radio-tile-label {
     color: white;
 }

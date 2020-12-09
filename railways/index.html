@@ -245,21 +245,21 @@
                             <div class="tab-pane" id="select-project" role="tabpanel"
                                 aria-labelledby="select-project-tab">
                                 <section class="mt-5">
-                                    <div class="container ">
+                                    <div class="container">
                                         <div id="corporate_form">
-                                            <div class="row justify-content-center">
+                                            <div class="row">
                                                 <!-- <div style="white-space: pre;"> -->
-                                                <div class="d-block">
+                                                <div class="">
                                                     <h3 id="subCategory-heading" class="text-center"></h3>
 
-                                                </div>
+                                                
                                                 <section class="pt-3" id="subCategorySection">
                                                     <div id="subCategoryRow" class="radio-tile-group row">
                                                         <script id="subCategoryTemplate"
                                                             type="text/x-handlebars-template">
                                                         {{#each objects}}
-                                                        <div class="col-xs-6 col-md-4 mx-md-auto  mx-lg-auto  col-lg-3 mt-3">
-                                                            <div class="card bg-white mx-auto">
+                                                        <div class="col-xs-6 col-md-4 col-lg-3">
+                                                            <div class="card bg-white">
                                                                 <div class="card-body">
                                                                     <input id="{{this.id}}" class="radio-button" type="radio" name="subcategory" />
                                                                     <div class="radio-tile subcategory">
@@ -343,6 +343,7 @@
                                                         </div>
                                                     </div>
                                                 </section>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
